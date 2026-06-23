@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-025",
+  "full_name": "Elias Díaz",
+  "national_id": "vI740445WJ",
+  "date_of_birth": "1994-10-01",
+  "email": "lulibarri@example.net",
+  "phone": "555-754-8629",
+  "address": "Continuación Sur Peralta 255 Edif. 102 , Depto. 106, San Evelio los altos, VER 93020-8815",
+  "employment_status": "self_employed",
+  "employer": "Ontiveros-Caraballo",
+  "declared_monthly_income_usd": 4418.09,
+  "credit_requested_usd": 50648.09,
+  "loan_purpose": "home_improvement",
+  "years_at_current_job": 7,
+  "existing_debts_usd": 10695.04
+}

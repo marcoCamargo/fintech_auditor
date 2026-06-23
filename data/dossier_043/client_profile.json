@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-043",
+  "full_name": "Jacobo Leonel Rodríguez",
+  "national_id": "Ss594886bt",
+  "date_of_birth": "1972-08-03",
+  "email": "taparicio@example.net",
+  "phone": "770.747.3419x017",
+  "address": "Cerrada Calvillo 538 Edif. 328 , Depto. 636, San Teodoro de la Montaña, TAB 45264-6970",
+  "employment_status": "self_employed",
+  "employer": "Corporacin Henríquez, Espinoza y Gil",
+  "declared_monthly_income_usd": 8021.76,
+  "credit_requested_usd": 44193.97,
+  "loan_purpose": "home_improvement",
+  "years_at_current_job": 16,
+  "existing_debts_usd": 4128.05
+}

@@ -1,0 +1,10 @@
+langchain
+langchain-core
+langchain-anthropic
+langsmith
+pypdf
+pandas
+pydantic
+python-dotenv
+faker
+reportlab

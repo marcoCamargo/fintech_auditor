@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-009",
+  "full_name": "Juana Delgado",
+  "national_id": "My537595MR",
+  "date_of_birth": "1982-03-09",
+  "email": "estelaaguirre@example.org",
+  "phone": "1-512-378-5986",
+  "address": "Circunvalación Sur Aparicio 858 560, Nueva Mozambique, SIN 20077-2957",
+  "employment_status": "self_employed",
+  "employer": "Blanco-Cortez A.C.",
+  "declared_monthly_income_usd": 10728.94,
+  "credit_requested_usd": 51225.68,
+  "loan_purpose": "business_expansion",
+  "years_at_current_job": 19,
+  "existing_debts_usd": 4571.85
+}

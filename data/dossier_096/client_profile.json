@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-096",
+  "full_name": "Inés Venegas",
+  "national_id": "rV590845Ix",
+  "date_of_birth": "1970-09-21",
+  "email": "brisenogeronimo@example.org",
+  "phone": "895-656-9005x452",
+  "address": "Viaducto Mascareñas 781 230, San Dolores los altos, DF 15968-5522",
+  "employment_status": "employed",
+  "employer": "Briones-Meléndez S.A. de C.V.",
+  "declared_monthly_income_usd": 8988.88,
+  "credit_requested_usd": 54032.85,
+  "loan_purpose": "debt_consolidation",
+  "years_at_current_job": 9,
+  "existing_debts_usd": 4368.28
+}

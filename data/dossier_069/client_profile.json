@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-069",
+  "full_name": "Dr. Alonso Collado",
+  "national_id": "cG476985jL",
+  "date_of_birth": "1983-01-01",
+  "email": "germangurule@example.net",
+  "phone": "07026196173",
+  "address": "Prolongación Sur Amaya 597 Interior 511, Nueva Antigua y Barbuda, CHIS 43441",
+  "employment_status": "contractor",
+  "employer": "Grupo Alcala, Rivera y Rojo",
+  "declared_monthly_income_usd": 3227.64,
+  "credit_requested_usd": 19031.48,
+  "loan_purpose": "home_improvement",
+  "years_at_current_job": 7,
+  "existing_debts_usd": 9562.45
+}

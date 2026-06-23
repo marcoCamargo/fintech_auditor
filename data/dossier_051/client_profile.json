@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-051",
+  "full_name": "Dra. Mayte Amaya",
+  "national_id": "Yo966647ce",
+  "date_of_birth": "1992-06-05",
+  "email": "rufino36@example.net",
+  "phone": "751-118-1733x233",
+  "address": "Diagonal Camboya 469 Interior 198, San Juan los altos, AGS 45953-5517",
+  "employment_status": "employed",
+  "employer": "Tovar-Armas A.C.",
+  "declared_monthly_income_usd": 6590.85,
+  "credit_requested_usd": 5322.53,
+  "loan_purpose": "debt_consolidation",
+  "years_at_current_job": 1,
+  "existing_debts_usd": 4548.75
+}

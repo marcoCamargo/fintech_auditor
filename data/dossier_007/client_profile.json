@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-007",
+  "full_name": "Genaro Pizarro",
+  "national_id": "Dq032740Ut",
+  "date_of_birth": "1969-09-17",
+  "email": "mateomiramontes@example.net",
+  "phone": "707.892.8224x5135",
+  "address": "Andador Aguascalientes 844 Edif. 004 , Depto. 693, San Trinidad los bajos, GTO 82106-0560",
+  "employment_status": "contractor",
+  "employer": "Quiñónez y Gonzales y Asociados",
+  "declared_monthly_income_usd": 9903.51,
+  "credit_requested_usd": 68487.88,
+  "loan_purpose": "vehicle_purchase",
+  "years_at_current_job": 12,
+  "existing_debts_usd": 28056.18
+}

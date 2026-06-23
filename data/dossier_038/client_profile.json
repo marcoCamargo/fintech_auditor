@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-038",
+  "full_name": "Dr. Aurelio Huerta",
+  "national_id": "km781129aF",
+  "date_of_birth": "1982-01-22",
+  "email": "amaliafrias@example.com",
+  "phone": "1-829-217-9038x58097",
+  "address": "Callejón Chihuahua 684 Edif. 530 , Depto. 733, Nueva Timor-Leste, GTO 06168",
+  "employment_status": "employed",
+  "employer": "Negrón y Casanova S.C.",
+  "declared_monthly_income_usd": 5154.84,
+  "credit_requested_usd": 73972.64,
+  "loan_purpose": "business_expansion",
+  "years_at_current_job": 18,
+  "existing_debts_usd": 20862.79
+}

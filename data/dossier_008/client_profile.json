@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-008",
+  "full_name": "Carolina Acevedo",
+  "national_id": "YL569115SY",
+  "date_of_birth": "1970-05-16",
+  "email": "pedro78@example.org",
+  "phone": "(201)432-2102",
+  "address": "Calzada Norte Rocha 881 847, San Mauricio de la Montaña, CAMP 06916-6075",
+  "employment_status": "employed",
+  "employer": "Corporacin Ortiz y Blanco",
+  "declared_monthly_income_usd": 10020.47,
+  "credit_requested_usd": 54647.74,
+  "loan_purpose": "home_improvement",
+  "years_at_current_job": 2,
+  "existing_debts_usd": 20692.49
+}

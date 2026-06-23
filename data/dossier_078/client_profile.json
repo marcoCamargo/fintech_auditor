@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-078",
+  "full_name": "Eloy Pérez",
+  "national_id": "uA476573fx",
+  "date_of_birth": "1984-12-07",
+  "email": "sierraaraceli@example.net",
+  "phone": "1-355-972-2535x420",
+  "address": "Periférico Sur Núñez 017 Edif. 520 , Depto. 112, San Cristobal los altos, MICH 70226-8474",
+  "employment_status": "employed",
+  "employer": "Durán y Rodríquez S. R.L. de C.V.",
+  "declared_monthly_income_usd": 4805.58,
+  "credit_requested_usd": 54640.06,
+  "loan_purpose": "home_improvement",
+  "years_at_current_job": 10,
+  "existing_debts_usd": 46.1
+}

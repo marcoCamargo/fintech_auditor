@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-080",
+  "full_name": "Dr. Emiliano Reyes",
+  "national_id": "el783516lA",
+  "date_of_birth": "1981-11-01",
+  "email": "aida01@example.net",
+  "phone": "581-694-1127x45679",
+  "address": "Periférico del Valle 349 Interior 463, Nueva Maldivas, TLAX 50365-9385",
+  "employment_status": "employed",
+  "employer": "Casanova-Sosa",
+  "declared_monthly_income_usd": 7690.86,
+  "credit_requested_usd": 50220.53,
+  "loan_purpose": "education",
+  "years_at_current_job": 7,
+  "existing_debts_usd": 13327.31
+}

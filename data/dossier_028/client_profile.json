@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-028",
+  "full_name": "Gustavo Fonseca",
+  "national_id": "RY459806iZ",
+  "date_of_birth": "1994-04-03",
+  "email": "silvanovaldes@example.net",
+  "phone": "777.476.8843",
+  "address": "Eje vial Norte Henríquez 481 Edif. 996 , Depto. 726, Nueva Belice, ZAC 81988",
+  "employment_status": "employed",
+  "employer": "Corporacin Mota, Flórez y de la Crúz",
+  "declared_monthly_income_usd": 4723.29,
+  "credit_requested_usd": 8749.9,
+  "loan_purpose": "home_improvement",
+  "years_at_current_job": 13,
+  "existing_debts_usd": 9612.15
+}

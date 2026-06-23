@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-012",
+  "full_name": "Alfredo Romo",
+  "national_id": "xB375950jH",
+  "date_of_birth": "1980-07-01",
+  "email": "zeferinomatias@example.com",
+  "phone": "+15(7)6538915845",
+  "address": "Diagonal Zamudio 989 Interior 229, San María Elena los altos, YUC 28207-5001",
+  "employment_status": "employed",
+  "employer": "Despacho Benavídez, Pulido y Carbajal",
+  "declared_monthly_income_usd": 17116.31,
+  "credit_requested_usd": 61780.83,
+  "loan_purpose": "debt_consolidation",
+  "years_at_current_job": 15,
+  "existing_debts_usd": 15937.67
+}

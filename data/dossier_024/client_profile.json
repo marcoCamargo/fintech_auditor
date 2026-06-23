@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-024",
+  "full_name": "Dr. Zacarías Godínez",
+  "national_id": "GD735632Bv",
+  "date_of_birth": "1984-01-19",
+  "email": "zteran@example.net",
+  "phone": "447.390.2533",
+  "address": "Retorno Tlaxcala 094 374, San Marisol los bajos, GRO 65595-0569",
+  "employment_status": "employed",
+  "employer": "Laboy A.C.",
+  "declared_monthly_income_usd": 5846.59,
+  "credit_requested_usd": 62237.97,
+  "loan_purpose": "education",
+  "years_at_current_job": 4,
+  "existing_debts_usd": 12629.58
+}

@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-001",
+  "full_name": "Jaime Jaime",
+  "national_id": "Zy032791EH",
+  "date_of_birth": "1983-05-19",
+  "email": "helenarojo@example.net",
+  "phone": "583.468.1597x532",
+  "address": "Eje vial Zacatecas 685 Interior 925, Vieja Colombia, DGO 40690",
+  "employment_status": "self_employed",
+  "employer": "Aguirre-Sáenz S.A. de C.V.",
+  "declared_monthly_income_usd": 12678.37,
+  "credit_requested_usd": 25840.35,
+  "loan_purpose": "debt_consolidation",
+  "years_at_current_job": 11,
+  "existing_debts_usd": 3066.31
+}

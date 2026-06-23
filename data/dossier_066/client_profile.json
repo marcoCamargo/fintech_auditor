@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-066",
+  "full_name": "Sra. Julia Castillo",
+  "national_id": "OJ166421FU",
+  "date_of_birth": "1991-08-06",
+  "email": "telizondo@example.com",
+  "phone": "749-191-8295",
+  "address": "Cerrada Archuleta 718 Interior 104, San Marisol los altos, DGO 52425",
+  "employment_status": "self_employed",
+  "employer": "Carranza-Gonzales S.A. de C.V.",
+  "declared_monthly_income_usd": 9171.26,
+  "credit_requested_usd": 69765.08,
+  "loan_purpose": "home_improvement",
+  "years_at_current_job": 5,
+  "existing_debts_usd": 7595.63
+}

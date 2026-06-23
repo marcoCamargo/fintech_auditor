@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-002",
+  "full_name": "Ing. Francisco Javier Vigil",
+  "national_id": "NG940492gf",
+  "date_of_birth": "1994-06-17",
+  "email": "mmora@example.org",
+  "phone": "1-477-175-0134x912",
+  "address": "Calzada Puebla 111 Edif. 228 , Depto. 047, San Camila de la Montaña, QRO 81161",
+  "employment_status": "self_employed",
+  "employer": "Proyectos Trujillo, Venegas y Vanegas",
+  "declared_monthly_income_usd": 3259.84,
+  "credit_requested_usd": 18629.68,
+  "loan_purpose": "business_expansion",
+  "years_at_current_job": 13,
+  "existing_debts_usd": 9820.58
+}

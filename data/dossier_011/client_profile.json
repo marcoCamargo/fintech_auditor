@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-011",
+  "full_name": "Eugenio Gerónimo Rangel",
+  "national_id": "Ve281799Ez",
+  "date_of_birth": "1968-10-06",
+  "email": "armando60@example.org",
+  "phone": "174-384-9041x2622",
+  "address": "Ampliación Castañeda 259 Edif. 042 , Depto. 202, Vieja Singapur, NL 56867",
+  "employment_status": "employed",
+  "employer": "Tapia-Palomo",
+  "declared_monthly_income_usd": 11525.01,
+  "credit_requested_usd": 75810.25,
+  "loan_purpose": "business_expansion",
+  "years_at_current_job": 8,
+  "existing_debts_usd": 4551.25
+}

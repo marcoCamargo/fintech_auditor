@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-077",
+  "full_name": "Ing. Israel Lomeli",
+  "national_id": "Sh703415mZ",
+  "date_of_birth": "1963-12-20",
+  "email": "cristianpalomino@example.net",
+  "phone": "04578261701",
+  "address": "Ampliación Padilla 990 Interior 152, Vieja Uruguay, SLP 18883",
+  "employment_status": "employed",
+  "employer": "Proyectos Osorio-Camacho",
+  "declared_monthly_income_usd": 6770.06,
+  "credit_requested_usd": 58603.65,
+  "loan_purpose": "home_improvement",
+  "years_at_current_job": 4,
+  "existing_debts_usd": 14263.92
+}

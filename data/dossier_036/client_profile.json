@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-036",
+  "full_name": "Jacobo Villarreal",
+  "national_id": "vb086320de",
+  "date_of_birth": "1992-07-13",
+  "email": "umunguia@example.net",
+  "phone": "465.443.3256",
+  "address": "Viaducto Sur Linares 361 Interior 699, San Alvaro los altos, GRO 41846-7460",
+  "employment_status": "self_employed",
+  "employer": "Medina y Rincón e Hijos",
+  "declared_monthly_income_usd": 14254.6,
+  "credit_requested_usd": 22160.57,
+  "loan_purpose": "vehicle_purchase",
+  "years_at_current_job": 11,
+  "existing_debts_usd": 6839.28
+}

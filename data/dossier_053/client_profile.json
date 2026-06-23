@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-053",
+  "full_name": "Martha Limón",
+  "national_id": "vl678753vN",
+  "date_of_birth": "1973-04-04",
+  "email": "lorena73@example.org",
+  "phone": "739.694.8420",
+  "address": "Privada Bahrein 707 Edif. 524 , Depto. 860, San Eduardo los altos, MICH 67446",
+  "employment_status": "self_employed",
+  "employer": "Galván-García",
+  "declared_monthly_income_usd": 3627.1,
+  "credit_requested_usd": 17775.42,
+  "loan_purpose": "education",
+  "years_at_current_job": 6,
+  "existing_debts_usd": 8422.97
+}

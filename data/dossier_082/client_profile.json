@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-082",
+  "full_name": "Eloy Daniel Sierra Carreón",
+  "national_id": "Ul329479DJ",
+  "date_of_birth": "1962-06-17",
+  "email": "hugocuriel@example.com",
+  "phone": "1-447-467-7733x155",
+  "address": "Circunvalación Nuevo León 355 929, San Aurora los bajos, TAMPS 04647-0807",
+  "employment_status": "contractor",
+  "employer": "Puga-Corona A.C.",
+  "declared_monthly_income_usd": 16799.25,
+  "credit_requested_usd": 30918.77,
+  "loan_purpose": "education",
+  "years_at_current_job": 20,
+  "existing_debts_usd": 680.82
+}

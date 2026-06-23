@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-050",
+  "full_name": "Aida León",
+  "national_id": "jo636865hg",
+  "date_of_birth": "1979-02-17",
+  "email": "carrascovictor@example.net",
+  "phone": "1-346-859-2912x2972",
+  "address": "Eje vial Michoacán de Ocampo 690 Interior 561, Nueva Canadá, NL 94810",
+  "employment_status": "employed",
+  "employer": "Corporacin Brito y Calvillo",
+  "declared_monthly_income_usd": 4751.94,
+  "credit_requested_usd": 34716.13,
+  "loan_purpose": "debt_consolidation",
+  "years_at_current_job": 12,
+  "existing_debts_usd": 22545.73
+}

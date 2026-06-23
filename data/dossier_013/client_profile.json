@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-013",
+  "full_name": "Fidel Murillo Cotto",
+  "national_id": "GZ075843zj",
+  "date_of_birth": "1971-03-31",
+  "email": "pabonguillermo@example.com",
+  "phone": "238-648-5521x678",
+  "address": "Calzada Sierra 800 Interior 059, Nueva Santa Lucía, MOR 08205",
+  "employment_status": "employed",
+  "employer": "Santillán-Zavala",
+  "declared_monthly_income_usd": 3562.15,
+  "credit_requested_usd": 33164.93,
+  "loan_purpose": "debt_consolidation",
+  "years_at_current_job": 3,
+  "existing_debts_usd": 14129.71
+}

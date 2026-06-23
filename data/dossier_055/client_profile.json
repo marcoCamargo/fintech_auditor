@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-055",
+  "full_name": "Amanda Escalante",
+  "national_id": "iS687289pQ",
+  "date_of_birth": "1960-08-04",
+  "email": "ignacio07@example.org",
+  "phone": "985-567-7636",
+  "address": "Periférico Gaytán 988 Interior 309, San Elsa de la Montaña, CAMP 40573",
+  "employment_status": "self_employed",
+  "employer": "Laboratorios López y Corral",
+  "declared_monthly_income_usd": 14970.33,
+  "credit_requested_usd": 38037.48,
+  "loan_purpose": "education",
+  "years_at_current_job": 8,
+  "existing_debts_usd": 17655.72
+}

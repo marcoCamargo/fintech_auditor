@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-026",
+  "full_name": "Gilberto Barrientos Barajas",
+  "national_id": "xe311674ro",
+  "date_of_birth": "2001-06-09",
+  "email": "haranda@example.com",
+  "phone": "08610606274",
+  "address": "Calzada Sur Hernández 459 Interior 142, Vieja Alemania, GTO 86076",
+  "employment_status": "employed",
+  "employer": "Despacho Nieto-Cintrón",
+  "declared_monthly_income_usd": 9830.54,
+  "credit_requested_usd": 14020.83,
+  "loan_purpose": "business_expansion",
+  "years_at_current_job": 5,
+  "existing_debts_usd": 26199.2
+}

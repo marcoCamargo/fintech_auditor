@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-020",
+  "full_name": "Cecilia Hilda Dueñas Peralta",
+  "national_id": "BL519573HB",
+  "date_of_birth": "1984-02-24",
+  "email": "chavarriahumberto@example.com",
+  "phone": "(528)219-7700",
+  "address": "Andador Oaxaca 527 Interior 805, San Socorro los bajos, GTO 41924-4032",
+  "employment_status": "employed",
+  "employer": "Salcedo y Aponte S.A.",
+  "declared_monthly_income_usd": 5048.25,
+  "credit_requested_usd": 18438.97,
+  "loan_purpose": "vehicle_purchase",
+  "years_at_current_job": 9,
+  "existing_debts_usd": 29584.3
+}

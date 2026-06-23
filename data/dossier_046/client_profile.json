@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-046",
+  "full_name": "Dolores Marisol Jiménez",
+  "national_id": "ng539982RC",
+  "date_of_birth": "1964-08-27",
+  "email": "horacio65@example.net",
+  "phone": "1-142-606-4672",
+  "address": "Ampliación Michoacán de Ocampo 900 114, Vieja Eslovaquia, OAX 24941-8403",
+  "employment_status": "self_employed",
+  "employer": "Nava-Cordero",
+  "declared_monthly_income_usd": 8062.16,
+  "credit_requested_usd": 26186.34,
+  "loan_purpose": "vehicle_purchase",
+  "years_at_current_job": 20,
+  "existing_debts_usd": 6199.4
+}

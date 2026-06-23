@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-019",
+  "full_name": "Felipe Espinal Nieves",
+  "national_id": "fR763889XG",
+  "date_of_birth": "1984-04-08",
+  "email": "antoniomatias@example.net",
+  "phone": "782-264-3820x08660",
+  "address": "Cerrada Avilés 013 061, San Olga los bajos, NL 04878",
+  "employment_status": "self_employed",
+  "employer": "García-Partida A.C.",
+  "declared_monthly_income_usd": 8523.7,
+  "credit_requested_usd": 26011.95,
+  "loan_purpose": "education",
+  "years_at_current_job": 4,
+  "existing_debts_usd": 12927.23
+}

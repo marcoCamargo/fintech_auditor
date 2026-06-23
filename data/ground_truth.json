@@ -1,0 +1,698 @@
+[
+  {
+    "dossier_id": "DOS-001",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 2,
+    "findings_detail": [
+      "Income discrepancy: declared $12,678/mo vs actual deposits $9,709/mo (30.6% gap)",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-002",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-003",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-004",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 3,
+    "findings_detail": [
+      "Income discrepancy: declared $10,112/mo vs actual deposits $6,736/mo (50.1% gap)",
+      "Credit score below minimum threshold: 522/850",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-005",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 3,
+    "findings_detail": [
+      "Income discrepancy: declared $14,406/mo vs actual deposits $10,786/mo (33.6% gap)",
+      "Credit score below minimum threshold: 491/850",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-006",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-007",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-008",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-009",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-010",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-011",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-012",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 1,
+    "findings_detail": [
+      "Income discrepancy: declared $17,116/mo vs actual deposits $10,929/mo (56.6% gap)"
+    ]
+  },
+  {
+    "dossier_id": "DOS-013",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-014",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 2,
+    "findings_detail": [
+      "Income discrepancy: declared $8,443/mo vs actual deposits $6,341/mo (33.2% gap)",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-015",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 1,
+    "findings_detail": [
+      "Income discrepancy: declared $7,889/mo vs actual deposits $5,998/mo (31.5% gap)"
+    ]
+  },
+  {
+    "dossier_id": "DOS-016",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-017",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-018",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 1,
+    "findings_detail": [
+      "Income discrepancy: declared $16,996/mo vs actual deposits $10,783/mo (57.6% gap)"
+    ]
+  },
+  {
+    "dossier_id": "DOS-019",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-020",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-021",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-022",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-023",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-024",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-025",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-026",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 2,
+    "findings_detail": [
+      "Income discrepancy: declared $9,831/mo vs actual deposits $7,662/mo (28.3% gap)",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-027",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-028",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 2,
+    "findings_detail": [
+      "Income discrepancy: declared $4,723/mo vs actual deposits $3,370/mo (40.2% gap)",
+      "Credit score below minimum threshold: 539/850"
+    ]
+  },
+  {
+    "dossier_id": "DOS-029",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 1,
+    "findings_detail": [
+      "Income discrepancy: declared $12,127/mo vs actual deposits $8,740/mo (38.7% gap)"
+    ]
+  },
+  {
+    "dossier_id": "DOS-030",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 1,
+    "findings_detail": [
+      "Income discrepancy: declared $3,536/mo vs actual deposits $2,505/mo (41.1% gap)"
+    ]
+  },
+  {
+    "dossier_id": "DOS-031",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-032",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 2,
+    "findings_detail": [
+      "Income discrepancy: declared $5,870/mo vs actual deposits $4,194/mo (40.0% gap)",
+      "Credit score below minimum threshold: 532/850"
+    ]
+  },
+  {
+    "dossier_id": "DOS-033",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-034",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-035",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-036",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 2,
+    "findings_detail": [
+      "Income discrepancy: declared $14,255/mo vs actual deposits $11,235/mo (26.9% gap)",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-037",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-038",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-039",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-040",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-041",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-042",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-043",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-044",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-045",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-046",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-047",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-048",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-049",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-050",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-051",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-052",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-053",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-054",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 3,
+    "findings_detail": [
+      "Income discrepancy: declared $12,304/mo vs actual deposits $9,710/mo (26.7% gap)",
+      "Credit score below minimum threshold: 535/850",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-055",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 3,
+    "findings_detail": [
+      "Income discrepancy: declared $14,970/mo vs actual deposits $9,445/mo (58.5% gap)",
+      "Credit score below minimum threshold: 539/850",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-056",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-057",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-058",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 3,
+    "findings_detail": [
+      "Income discrepancy: declared $13,898/mo vs actual deposits $9,223/mo (50.7% gap)",
+      "Credit score below minimum threshold: 502/850",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-059",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-060",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-061",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-062",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-063",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-064",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-065",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 3,
+    "findings_detail": [
+      "Income discrepancy: declared $12,240/mo vs actual deposits $8,383/mo (46.0% gap)",
+      "Credit score below minimum threshold: 496/850",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-066",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-067",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-068",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-069",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-070",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 2,
+    "findings_detail": [
+      "Income discrepancy: declared $12,059/mo vs actual deposits $8,863/mo (36.1% gap)",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-071",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-072",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 3,
+    "findings_detail": [
+      "Income discrepancy: declared $8,685/mo vs actual deposits $6,894/mo (26.0% gap)",
+      "Credit score below minimum threshold: 554/850",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-073",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-074",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-075",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-076",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 1,
+    "findings_detail": [
+      "Income discrepancy: declared $4,509/mo vs actual deposits $3,258/mo (38.4% gap)"
+    ]
+  },
+  {
+    "dossier_id": "DOS-077",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-078",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 2,
+    "findings_detail": [
+      "Income discrepancy: declared $4,806/mo vs actual deposits $3,790/mo (26.8% gap)",
+      "Credit score below minimum threshold: 504/850"
+    ]
+  },
+  {
+    "dossier_id": "DOS-079",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-080",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-081",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-082",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 3,
+    "findings_detail": [
+      "Income discrepancy: declared $16,799/mo vs actual deposits $11,112/mo (51.2% gap)",
+      "Credit score below minimum threshold: 488/850",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-083",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-084",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-085",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 2,
+    "findings_detail": [
+      "Income discrepancy: declared $15,982/mo vs actual deposits $11,081/mo (44.2% gap)",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-086",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-087",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 2,
+    "findings_detail": [
+      "Income discrepancy: declared $12,253/mo vs actual deposits $9,713/mo (26.2% gap)",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-088",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-089",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 3,
+    "findings_detail": [
+      "Income discrepancy: declared $8,101/mo vs actual deposits $6,153/mo (31.7% gap)",
+      "Credit score below minimum threshold: 526/850",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-090",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 2,
+    "findings_detail": [
+      "Income discrepancy: declared $10,730/mo vs actual deposits $7,343/mo (46.1% gap)",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-091",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-092",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-093",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-094",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 3,
+    "findings_detail": [
+      "Income discrepancy: declared $11,185/mo vs actual deposits $8,645/mo (29.4% gap)",
+      "Credit score below minimum threshold: 523/850",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-095",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 2,
+    "findings_detail": [
+      "Income discrepancy: declared $12,765/mo vs actual deposits $8,250/mo (54.7% gap)",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-096",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 3,
+    "findings_detail": [
+      "Income discrepancy: declared $8,989/mo vs actual deposits $6,860/mo (31.0% gap)",
+      "Credit score below minimum threshold: 560/850",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-097",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-098",
+    "expected_status": "Non-Compliant",
+    "expected_findings_count": 3,
+    "findings_detail": [
+      "Income discrepancy: declared $8,424/mo vs actual deposits $6,199/mo (35.9% gap)",
+      "Credit score below minimum threshold: 516/850",
+      "High income claim inconsistent with poor credit history"
+    ]
+  },
+  {
+    "dossier_id": "DOS-099",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  },
+  {
+    "dossier_id": "DOS-100",
+    "expected_status": "Compliant",
+    "expected_findings_count": 0,
+    "findings_detail": []
+  }
+]

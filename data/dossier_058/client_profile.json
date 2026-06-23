@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-058",
+  "full_name": "Evelio Saldivar",
+  "national_id": "AZ502775vK",
+  "date_of_birth": "1985-07-04",
+  "email": "qfonseca@example.net",
+  "phone": "(254)929-0899x82876",
+  "address": "Avenida Mali 799 Edif. 451 , Depto. 268, San César los altos, Q. ROO 39296",
+  "employment_status": "contractor",
+  "employer": "Rosas y Uribe y Asociados",
+  "declared_monthly_income_usd": 13898.21,
+  "credit_requested_usd": 66297.52,
+  "loan_purpose": "business_expansion",
+  "years_at_current_job": 14,
+  "existing_debts_usd": 27928.91
+}

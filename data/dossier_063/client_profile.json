@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-063",
+  "full_name": "Mauro Espinosa",
+  "national_id": "iP112918yD",
+  "date_of_birth": "1984-08-08",
+  "email": "espartacochapa@example.net",
+  "phone": "515.869.9349x51542",
+  "address": "Calle Longoria 261 Edif. 770 , Depto. 477, San José Carlos los bajos, CHIS 62928-9539",
+  "employment_status": "self_employed",
+  "employer": "Corporacin González-Hidalgo",
+  "declared_monthly_income_usd": 9279.21,
+  "credit_requested_usd": 60780.85,
+  "loan_purpose": "debt_consolidation",
+  "years_at_current_job": 13,
+  "existing_debts_usd": 23935.28
+}

@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-032",
+  "full_name": "Srita. Rosa Garibay",
+  "national_id": "cY551525Rd",
+  "date_of_birth": "1986-11-16",
+  "email": "zblanco@example.com",
+  "phone": "1-658-039-4521x854",
+  "address": "Callejón Nuevo León 553 Interior 534, San Fidel los altos, DGO 48788-1265",
+  "employment_status": "employed",
+  "employer": "Laboratorios Brito, Fernández y Ruelas",
+  "declared_monthly_income_usd": 5870.28,
+  "credit_requested_usd": 65215.25,
+  "loan_purpose": "debt_consolidation",
+  "years_at_current_job": 3,
+  "existing_debts_usd": 15538.65
+}

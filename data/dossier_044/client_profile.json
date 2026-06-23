@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-044",
+  "full_name": "Dra. Celia Gallegos",
+  "national_id": "VC647904Gt",
+  "date_of_birth": "1991-10-19",
+  "email": "vargascelia@example.org",
+  "phone": "349.335.1228",
+  "address": "Andador Garrido 804 Interior 769, Vieja Benin, GTO 16027",
+  "employment_status": "employed",
+  "employer": "Grupo Bustos y Quezada",
+  "declared_monthly_income_usd": 4803.15,
+  "credit_requested_usd": 41084.16,
+  "loan_purpose": "business_expansion",
+  "years_at_current_job": 19,
+  "existing_debts_usd": 11150.86
+}

@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-054",
+  "full_name": "Cristal Arroyo",
+  "national_id": "SO601472CP",
+  "date_of_birth": "1988-11-06",
+  "email": "palacioscristian@example.net",
+  "phone": "1-852-259-8892",
+  "address": "Circunvalación Solano 125 Interior 644, Vieja Uzbekistán, QRO 05203-9360",
+  "employment_status": "self_employed",
+  "employer": "Laboratorios Solorio, de la Rosa y Naranjo",
+  "declared_monthly_income_usd": 12303.72,
+  "credit_requested_usd": 29566.09,
+  "loan_purpose": "debt_consolidation",
+  "years_at_current_job": 2,
+  "existing_debts_usd": 28360.63
+}

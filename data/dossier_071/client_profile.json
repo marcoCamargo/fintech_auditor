@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-071",
+  "full_name": "Ing. Delia Bravo",
+  "national_id": "lS792116MS",
+  "date_of_birth": "1997-04-25",
+  "email": "cornelio05@example.org",
+  "phone": "642-751-7213x8542",
+  "address": "Retorno Arredondo 771 Edif. 378 , Depto. 423, San Uriel los altos, SIN 24328-2908",
+  "employment_status": "employed",
+  "employer": "Henríquez y Caballero y Asociados",
+  "declared_monthly_income_usd": 8074.72,
+  "credit_requested_usd": 20163.85,
+  "loan_purpose": "business_expansion",
+  "years_at_current_job": 3,
+  "existing_debts_usd": 24634.61
+}

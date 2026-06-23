@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-045",
+  "full_name": "Sr. Víctor Flórez",
+  "national_id": "gD781555Tn",
+  "date_of_birth": "1979-01-26",
+  "email": "gaitanabel@example.org",
+  "phone": "1-430-624-6405",
+  "address": "Viaducto Islas Salomón 840 898, San Camila de la Montaña, SIN 13374",
+  "employment_status": "contractor",
+  "employer": "Soto y Asociados",
+  "declared_monthly_income_usd": 10159.92,
+  "credit_requested_usd": 48601.57,
+  "loan_purpose": "education",
+  "years_at_current_job": 20,
+  "existing_debts_usd": 2402.76
+}

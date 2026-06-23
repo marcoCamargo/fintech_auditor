@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-093",
+  "full_name": "José Omar Villagómez Arce",
+  "national_id": "kA764232pm",
+  "date_of_birth": "2003-11-29",
+  "email": "jacobo55@example.net",
+  "phone": "(065)060-0487x5823",
+  "address": "Ampliación Monroy 924 Edif. 149 , Depto. 280, San María los bajos, CHIH 24622",
+  "employment_status": "employed",
+  "employer": "Orozco A.C.",
+  "declared_monthly_income_usd": 11067.82,
+  "credit_requested_usd": 78380.97,
+  "loan_purpose": "debt_consolidation",
+  "years_at_current_job": 1,
+  "existing_debts_usd": 12905.26
+}

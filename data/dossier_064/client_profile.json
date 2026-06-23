@@ -1,0 +1,16 @@
+{
+  "dossier_id": "DOS-064",
+  "full_name": "David Riojas Gallegos",
+  "national_id": "Nz138599JH",
+  "date_of_birth": "1977-05-20",
+  "email": "arreolacatalina@example.net",
+  "phone": "550.872.7023",
+  "address": "Eje vial Tabasco 718 Interior 114, Vieja Niger, MOR 32812",
+  "employment_status": "employed",
+  "employer": "Bañuelos-Muñiz",
+  "declared_monthly_income_usd": 7643.07,
+  "credit_requested_usd": 35245.43,
+  "loan_purpose": "vehicle_purchase",
+  "years_at_current_job": 8,
+  "existing_debts_usd": 29714.01
+}
