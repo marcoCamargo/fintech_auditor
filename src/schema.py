@@ -7,7 +7,10 @@ deserialize the model's JSON response — any violation raises a
 ValidationError and the dossier is recorded as a failed audit.
 """
 
+import logging
 from pydantic import BaseModel, field_validator, Field
+
+logger = logging.getLogger("fintech_auditor")
 
 
 class AuditResult(BaseModel):
@@ -43,9 +46,13 @@ class AuditResult(BaseModel):
     @classmethod
     def validate_summary_length(cls, v: str) -> str:
         if len(v) > 500:
-            raise ValueError(
-                f"executive_summary exceeds 500 characters ({len(v)} received). Must be more concise."
+            # Truncate instead of rejecting the whole audit result over a minor overage.
+            # Cut at the last word boundary before char 500 to avoid splitting mid-word.
+            truncated = v[:500].rsplit(" ", 1)[0]
+            logger.warning(
+                f"  [SCHEMA] executive_summary truncated from {len(v)} to {len(truncated)} characters"
             )
+            return truncated
         return v
 
     @field_validator("findings_count")

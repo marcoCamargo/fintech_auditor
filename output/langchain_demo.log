@@ -1144,3 +1144,1134 @@ For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/erro
 2026-06-24 21:49:52 | INFO     |   Report saved to  : output/audit_report.json
 2026-06-24 21:49:52 | INFO     |   Log saved to     : output/langchain_demo.log
 2026-06-24 21:49:52 | INFO     | ============================================================
+2026-06-24 21:56:16 | INFO     |   [PDF] Loading: data/dossier_084/credit_bureau.pdf
+2026-06-24 21:56:16 | INFO     |   [PDF] Extracted 1 page(s), 498 characters
+2026-06-24 21:56:16 | INFO     |   [JSON] Loading: data/dossier_084/client_profile.json
+2026-06-24 21:56:16 | INFO     |   [JSON] Profile loaded: Natividad Angulo Canales | Declared income: $4,688.44/mo
+2026-06-24 21:56:16 | INFO     |   [CSV] Loading: data/dossier_084/transactions.csv
+2026-06-24 21:56:16 | INFO     |   [CSV] 162 transactions | Avg payroll deposit: $5,043.22/mo
+2026-06-24 21:56:16 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-084
+2026-06-24 21:56:21 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Client Natividad Angulo Canales presents one compliance violation: declared mont...
+2026-06-24 21:56:21 | INFO     |   [PDF] Loading: data/dossier_089/credit_bureau.pdf
+2026-06-24 21:56:21 | INFO     |   [PDF] Extracted 1 page(s), 846 characters
+2026-06-24 21:56:21 | INFO     |   [JSON] Loading: data/dossier_089/client_profile.json
+2026-06-24 21:56:21 | INFO     |   [JSON] Profile loaded: María José Elisa Cadena Berríos | Declared income: $8,101.32/mo
+2026-06-24 21:56:21 | INFO     |   [CSV] Loading: data/dossier_089/transactions.csv
+2026-06-24 21:56:21 | INFO     |   [CSV] 153 transactions | Avg payroll deposit: $6,091.53/mo
+2026-06-24 21:56:21 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-089
+2026-06-24 21:56:23 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 3 | Summary: Client María José Elisa Cadena Berríos fails three compliance rules: (1) Credit ...
+2026-06-24 21:56:52 | INFO     | ============================================================
+2026-06-24 21:56:52 | INFO     | APEX CREDIT SOLUTIONS — AUTOMATED FINANCIAL AUDITOR
+2026-06-24 21:56:52 | INFO     | ============================================================
+2026-06-24 21:56:52 | INFO     | Dossiers found: 100
+2026-06-24 21:56:52 | INFO     | 
+[001/100] Processing dossier_001
+2026-06-24 21:56:52 | INFO     |   [PDF] Loading: data/dossier_001/credit_bureau.pdf
+2026-06-24 21:56:52 | INFO     |   [PDF] Extracted 1 page(s), 768 characters
+2026-06-24 21:56:52 | INFO     |   [JSON] Loading: data/dossier_001/client_profile.json
+2026-06-24 21:56:52 | INFO     |   [JSON] Profile loaded: Lic. Ariadna Olmos | Declared income: $12,678.37/mo
+2026-06-24 21:56:52 | INFO     |   [CSV] Loading: data/dossier_001/transactions.csv
+2026-06-24 21:56:52 | INFO     |   [CSV] 148 transactions | Avg payroll deposit: $9,613.12/mo
+2026-06-24 21:56:52 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-001
+2026-06-24 21:56:54 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Lic. Ariadna Olmos presents two critical compliance violations: (1) Incom...
+2026-06-24 21:56:54 | INFO     |   [OK] DOS-001 → Non-Compliant (2 findings) [1.93s]
+2026-06-24 21:56:54 | INFO     | 
+[002/100] Processing dossier_002
+2026-06-24 21:56:54 | INFO     |   [PDF] Loading: data/dossier_002/credit_bureau.pdf
+2026-06-24 21:56:54 | INFO     |   [PDF] Extracted 1 page(s), 765 characters
+2026-06-24 21:56:54 | INFO     |   [JSON] Loading: data/dossier_002/client_profile.json
+2026-06-24 21:56:54 | INFO     |   [JSON] Profile loaded: Dr. Espartaco Tamayo | Declared income: $3,259.84/mo
+2026-06-24 21:56:54 | INFO     |   [CSV] Loading: data/dossier_002/transactions.csv
+2026-06-24 21:56:54 | INFO     |   [CSV] 169 transactions | Avg payroll deposit: $3,282.02/mo
+2026-06-24 21:56:54 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-002
+2026-06-24 21:56:56 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Dr. Espartaco Tamayo passes all compliance checks. Credit score of 841 is excell...
+2026-06-24 21:56:56 | INFO     |   [OK] DOS-002 → Compliant (0 findings) [1.76s]
+2026-06-24 21:56:56 | INFO     | 
+[003/100] Processing dossier_003
+2026-06-24 21:56:56 | INFO     |   [PDF] Loading: data/dossier_003/credit_bureau.pdf
+2026-06-24 21:56:56 | INFO     |   [PDF] Extracted 1 page(s), 491 characters
+2026-06-24 21:56:56 | INFO     |   [JSON] Loading: data/dossier_003/client_profile.json
+2026-06-24 21:56:56 | INFO     |   [JSON] Profile loaded: Rosa Crespo Benavides | Declared income: $10,175.65/mo
+2026-06-24 21:56:56 | INFO     |   [CSV] Loading: data/dossier_003/transactions.csv
+2026-06-24 21:56:56 | INFO     |   [CSV] 147 transactions | Avg payroll deposit: $10,946.42/mo
+2026-06-24 21:56:56 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-003
+2026-06-24 21:56:57 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Rosa Crespo Benavides passes all compliance checks. Credit score of 839 is excel...
+2026-06-24 21:56:57 | INFO     |   [OK] DOS-003 → Compliant (0 findings) [1.52s]
+2026-06-24 21:56:57 | INFO     | 
+[004/100] Processing dossier_004
+2026-06-24 21:56:57 | INFO     |   [PDF] Loading: data/dossier_004/credit_bureau.pdf
+2026-06-24 21:56:57 | INFO     |   [PDF] Extracted 1 page(s), 684 characters
+2026-06-24 21:56:57 | INFO     |   [JSON] Loading: data/dossier_004/client_profile.json
+2026-06-24 21:56:57 | INFO     |   [JSON] Profile loaded: Francisco Javier Brito Parra | Declared income: $10,112.26/mo
+2026-06-24 21:56:57 | INFO     |   [CSV] Loading: data/dossier_004/transactions.csv
+2026-06-24 21:56:57 | INFO     |   [CSV] 158 transactions | Avg payroll deposit: $6,696.93/mo
+2026-06-24 21:56:57 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-004
+2026-06-24 21:56:59 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Francisco Javier Brito Parra fails compliance review. FINDING 1: Income d...
+2026-06-24 21:56:59 | INFO     |   [OK] DOS-004 → Non-Compliant (2 findings) [1.87s]
+2026-06-24 21:56:59 | INFO     | 
+[005/100] Processing dossier_005
+2026-06-24 21:56:59 | INFO     |   [PDF] Loading: data/dossier_005/credit_bureau.pdf
+2026-06-24 21:56:59 | INFO     |   [PDF] Extracted 1 page(s), 496 characters
+2026-06-24 21:56:59 | INFO     |   [JSON] Loading: data/dossier_005/client_profile.json
+2026-06-24 21:56:59 | INFO     |   [JSON] Profile loaded: Gabino Ramón Palomo Pedraza | Declared income: $14,406.42/mo
+2026-06-24 21:56:59 | INFO     |   [CSV] Loading: data/dossier_005/transactions.csv
+2026-06-24 21:56:59 | INFO     |   [CSV] 157 transactions | Avg payroll deposit: $10,675.06/mo
+2026-06-24 21:56:59 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-005
+2026-06-24 21:57:02 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Gabino Ramón Palomo Pedraza fails two critical compliance checks: (1) Cre...
+2026-06-24 21:57:02 | INFO     |   [OK] DOS-005 → Non-Compliant (2 findings) [2.31s]
+2026-06-24 21:57:02 | INFO     | 
+[006/100] Processing dossier_006
+2026-06-24 21:57:02 | INFO     |   [PDF] Loading: data/dossier_006/credit_bureau.pdf
+2026-06-24 21:57:02 | INFO     |   [PDF] Extracted 1 page(s), 686 characters
+2026-06-24 21:57:02 | INFO     |   [JSON] Loading: data/dossier_006/client_profile.json
+2026-06-24 21:57:02 | INFO     |   [JSON] Profile loaded: José Eduardo Salcedo Nazario | Declared income: $4,253.63/mo
+2026-06-24 21:57:02 | INFO     |   [CSV] Loading: data/dossier_006/transactions.csv
+2026-06-24 21:57:02 | INFO     |   [CSV] 136 transactions | Avg payroll deposit: $4,482.18/mo
+2026-06-24 21:57:02 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-006
+2026-06-24 21:57:03 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client José Eduardo Salcedo Nazario presents two compliance violations: (1) Inco...
+2026-06-24 21:57:03 | INFO     |   [OK] DOS-006 → Non-Compliant (2 findings) [1.94s]
+2026-06-24 21:57:03 | INFO     | 
+[007/100] Processing dossier_007
+2026-06-24 21:57:03 | INFO     |   [PDF] Loading: data/dossier_007/credit_bureau.pdf
+2026-06-24 21:57:04 | INFO     |   [PDF] Extracted 1 page(s), 578 characters
+2026-06-24 21:57:04 | INFO     |   [JSON] Loading: data/dossier_007/client_profile.json
+2026-06-24 21:57:04 | INFO     |   [JSON] Profile loaded: Srita. Úrsula Zúñiga | Declared income: $9,903.51/mo
+2026-06-24 21:57:04 | INFO     |   [CSV] Loading: data/dossier_007/transactions.csv
+2026-06-24 21:57:04 | INFO     |   [CSV] 149 transactions | Avg payroll deposit: $9,482.73/mo
+2026-06-24 21:57:04 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-007
+2026-06-24 21:57:06 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Srita. Úrsula Zúñiga (DOS-007) passes all compliance checks. Credit score...
+2026-06-24 21:57:06 | INFO     |   [OK] DOS-007 → Compliant (0 findings) [2.21s]
+2026-06-24 21:57:06 | INFO     | 
+[008/100] Processing dossier_008
+2026-06-24 21:57:06 | INFO     |   [PDF] Loading: data/dossier_008/credit_bureau.pdf
+2026-06-24 21:57:06 | INFO     |   [PDF] Extracted 1 page(s), 733 characters
+2026-06-24 21:57:06 | INFO     |   [JSON] Loading: data/dossier_008/client_profile.json
+2026-06-24 21:57:06 | INFO     |   [JSON] Profile loaded: Judith Tafoya | Declared income: $10,020.47/mo
+2026-06-24 21:57:06 | INFO     |   [CSV] Loading: data/dossier_008/transactions.csv
+2026-06-24 21:57:06 | INFO     |   [CSV] 145 transactions | Avg payroll deposit: $9,855.55/mo
+2026-06-24 21:57:06 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-008
+2026-06-24 21:57:07 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Judith Tafoya (DOS-008) passes all compliance checks. Credit score of 772...
+2026-06-24 21:57:07 | INFO     |   [OK] DOS-008 → Compliant (0 findings) [1.62s]
+2026-06-24 21:57:07 | INFO     | 
+[009/100] Processing dossier_009
+2026-06-24 21:57:07 | INFO     |   [PDF] Loading: data/dossier_009/credit_bureau.pdf
+2026-06-24 21:57:07 | INFO     |   [PDF] Extracted 1 page(s), 835 characters
+2026-06-24 21:57:07 | INFO     |   [JSON] Loading: data/dossier_009/client_profile.json
+2026-06-24 21:57:07 | INFO     |   [JSON] Profile loaded: Ing. Marco Antonio Limón | Declared income: $10,728.94/mo
+2026-06-24 21:57:07 | INFO     |   [CSV] Loading: data/dossier_009/transactions.csv
+2026-06-24 21:57:07 | INFO     |   [CSV] 152 transactions | Avg payroll deposit: $11,110.95/mo
+2026-06-24 21:57:07 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-009
+2026-06-24 21:57:10 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Ing. Marco Antonio Limón (DOS-009) passes all compliance checks. Credit s...
+2026-06-24 21:57:10 | INFO     |   [OK] DOS-009 → Compliant (0 findings) [2.19s]
+2026-06-24 21:57:10 | INFO     | 
+[010/100] Processing dossier_010
+2026-06-24 21:57:10 | INFO     |   [PDF] Loading: data/dossier_010/credit_bureau.pdf
+2026-06-24 21:57:10 | INFO     |   [PDF] Extracted 1 page(s), 597 characters
+2026-06-24 21:57:10 | INFO     |   [JSON] Loading: data/dossier_010/client_profile.json
+2026-06-24 21:57:10 | INFO     |   [JSON] Profile loaded: Conchita Wendolin Navarrete | Declared income: $3,528.91/mo
+2026-06-24 21:57:10 | INFO     |   [CSV] Loading: data/dossier_010/transactions.csv
+2026-06-24 21:57:10 | INFO     |   [CSV] 145 transactions | Avg payroll deposit: $3,289.30/mo
+2026-06-24 21:57:10 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-010
+2026-06-24 21:57:12 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Client Conchita Wendolin Navarrete (DOS-010) shows one compliance violation: dec...
+2026-06-24 21:57:12 | INFO     |   [OK] DOS-010 → Non-Compliant (1 findings) [2.13s]
+2026-06-24 21:57:12 | INFO     | 
+[011/100] Processing dossier_011
+2026-06-24 21:57:12 | INFO     |   [PDF] Loading: data/dossier_011/credit_bureau.pdf
+2026-06-24 21:57:12 | INFO     |   [PDF] Extracted 1 page(s), 766 characters
+2026-06-24 21:57:12 | INFO     |   [JSON] Loading: data/dossier_011/client_profile.json
+2026-06-24 21:57:12 | INFO     |   [JSON] Profile loaded: Guillermina Garica Estévez | Declared income: $11,525.01/mo
+2026-06-24 21:57:12 | INFO     |   [CSV] Loading: data/dossier_011/transactions.csv
+2026-06-24 21:57:12 | INFO     |   [CSV] 142 transactions | Avg payroll deposit: $10,850.19/mo
+2026-06-24 21:57:12 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-011
+2026-06-24 21:57:14 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Client Guillermina Garica Estévez presents one compliance violation: declared mo...
+2026-06-24 21:57:14 | INFO     |   [OK] DOS-011 → Non-Compliant (1 findings) [2.24s]
+2026-06-24 21:57:14 | INFO     | 
+[012/100] Processing dossier_012
+2026-06-24 21:57:14 | INFO     |   [PDF] Loading: data/dossier_012/credit_bureau.pdf
+2026-06-24 21:57:14 | INFO     |   [PDF] Extracted 1 page(s), 734 characters
+2026-06-24 21:57:14 | INFO     |   [JSON] Loading: data/dossier_012/client_profile.json
+2026-06-24 21:57:14 | INFO     |   [JSON] Profile loaded: Ivonne Aldonza Bermúdez Cepeda | Declared income: $17,116.31/mo
+2026-06-24 21:57:14 | INFO     |   [CSV] Loading: data/dossier_012/transactions.csv
+2026-06-24 21:57:14 | INFO     |   [CSV] 141 transactions | Avg payroll deposit: $10,925.84/mo
+2026-06-24 21:57:14 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-012
+2026-06-24 21:57:15 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Income discrepancy detected: Declared monthly income of $17,116.31 exceeds actua...
+2026-06-24 21:57:15 | INFO     |   [OK] DOS-012 → Non-Compliant (1 findings) [1.44s]
+2026-06-24 21:57:15 | INFO     | 
+[013/100] Processing dossier_013
+2026-06-24 21:57:15 | INFO     |   [PDF] Loading: data/dossier_013/credit_bureau.pdf
+2026-06-24 21:57:15 | INFO     |   [PDF] Extracted 1 page(s), 788 characters
+2026-06-24 21:57:15 | INFO     |   [JSON] Loading: data/dossier_013/client_profile.json
+2026-06-24 21:57:15 | INFO     |   [JSON] Profile loaded: Reynaldo Pablo Serrato | Declared income: $3,562.15/mo
+2026-06-24 21:57:15 | INFO     |   [CSV] Loading: data/dossier_013/transactions.csv
+2026-06-24 21:57:15 | INFO     |   [CSV] 154 transactions | Avg payroll deposit: $3,414.16/mo
+2026-06-24 21:57:15 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-013
+2026-06-24 21:57:17 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Reynaldo Pablo Serrato (DOS-013) passes all compliance checks. Credit sco...
+2026-06-24 21:57:17 | INFO     |   [OK] DOS-013 → Compliant (0 findings) [1.92s]
+2026-06-24 21:57:17 | INFO     | 
+[014/100] Processing dossier_014
+2026-06-24 21:57:17 | INFO     |   [PDF] Loading: data/dossier_014/credit_bureau.pdf
+2026-06-24 21:57:17 | INFO     |   [PDF] Extracted 1 page(s), 780 characters
+2026-06-24 21:57:17 | INFO     |   [JSON] Loading: data/dossier_014/client_profile.json
+2026-06-24 21:57:17 | INFO     |   [JSON] Profile loaded: Patricio Teodoro Concepción | Declared income: $8,442.74/mo
+2026-06-24 21:57:17 | INFO     |   [CSV] Loading: data/dossier_014/transactions.csv
+2026-06-24 21:57:17 | INFO     |   [CSV] 166 transactions | Avg payroll deposit: $6,218.15/mo
+2026-06-24 21:57:17 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-014
+2026-06-24 21:57:19 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Patricio Teodoro Concepción fails compliance review. Finding 1: Declared ...
+2026-06-24 21:57:19 | INFO     |   [OK] DOS-014 → Non-Compliant (2 findings) [1.97s]
+2026-06-24 21:57:19 | INFO     | 
+[015/100] Processing dossier_015
+2026-06-24 21:57:19 | INFO     |   [PDF] Loading: data/dossier_015/credit_bureau.pdf
+2026-06-24 21:57:19 | INFO     |   [PDF] Extracted 1 page(s), 580 characters
+2026-06-24 21:57:19 | INFO     |   [JSON] Loading: data/dossier_015/client_profile.json
+2026-06-24 21:57:19 | INFO     |   [JSON] Profile loaded: Ing. José Eduardo Valencia | Declared income: $7,889.03/mo
+2026-06-24 21:57:19 | INFO     |   [CSV] Loading: data/dossier_015/transactions.csv
+2026-06-24 21:57:19 | INFO     |   [CSV] 154 transactions | Avg payroll deposit: $5,946.09/mo
+2026-06-24 21:57:19 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-015
+2026-06-24 21:57:21 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Income discrepancy detected: Declared monthly income of $7,889.03 exceeds actual...
+2026-06-24 21:57:21 | INFO     |   [OK] DOS-015 → Non-Compliant (1 findings) [1.39s]
+2026-06-24 21:57:21 | INFO     | 
+[016/100] Processing dossier_016
+2026-06-24 21:57:21 | INFO     |   [PDF] Loading: data/dossier_016/credit_bureau.pdf
+2026-06-24 21:57:21 | INFO     |   [PDF] Extracted 1 page(s), 850 characters
+2026-06-24 21:57:21 | INFO     |   [JSON] Loading: data/dossier_016/client_profile.json
+2026-06-24 21:57:21 | INFO     |   [JSON] Profile loaded: Martín Medrano Lerma | Declared income: $9,988.85/mo
+2026-06-24 21:57:21 | INFO     |   [CSV] Loading: data/dossier_016/transactions.csv
+2026-06-24 21:57:21 | INFO     |   [CSV] 142 transactions | Avg payroll deposit: $9,882.69/mo
+2026-06-24 21:57:21 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-016
+2026-06-24 21:57:22 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Martín Medrano Lerma (DOS-016) passes all compliance checks. Credit score...
+2026-06-24 21:57:22 | INFO     |   [OK] DOS-016 → Compliant (0 findings) [1.77s]
+2026-06-24 21:57:22 | INFO     | 
+[017/100] Processing dossier_017
+2026-06-24 21:57:22 | INFO     |   [PDF] Loading: data/dossier_017/credit_bureau.pdf
+2026-06-24 21:57:22 | INFO     |   [PDF] Extracted 1 page(s), 830 characters
+2026-06-24 21:57:22 | INFO     |   [JSON] Loading: data/dossier_017/client_profile.json
+2026-06-24 21:57:22 | INFO     |   [JSON] Profile loaded: Olga Salma Baca | Declared income: $6,818.41/mo
+2026-06-24 21:57:22 | INFO     |   [CSV] Loading: data/dossier_017/transactions.csv
+2026-06-24 21:57:22 | INFO     |   [CSV] 162 transactions | Avg payroll deposit: $7,099.05/mo
+2026-06-24 21:57:22 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-017
+2026-06-24 21:57:24 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Olga Salma Baca (DOS-017) passes all compliance checks. Credit score of 7...
+2026-06-24 21:57:24 | INFO     |   [OK] DOS-017 → Compliant (0 findings) [1.79s]
+2026-06-24 21:57:24 | INFO     | 
+[018/100] Processing dossier_018
+2026-06-24 21:57:24 | INFO     |   [PDF] Loading: data/dossier_018/credit_bureau.pdf
+2026-06-24 21:57:24 | INFO     |   [PDF] Extracted 1 page(s), 865 characters
+2026-06-24 21:57:24 | INFO     |   [JSON] Loading: data/dossier_018/client_profile.json
+2026-06-24 21:57:24 | INFO     |   [JSON] Profile loaded: Enrique Rolón | Declared income: $16,996.03/mo
+2026-06-24 21:57:24 | INFO     |   [CSV] Loading: data/dossier_018/transactions.csv
+2026-06-24 21:57:24 | INFO     |   [CSV] 149 transactions | Avg payroll deposit: $10,867.95/mo
+2026-06-24 21:57:24 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-018
+2026-06-24 21:57:27 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Enrique Rolón (DOS-018) exhibits significant income discrepancy and credi...
+2026-06-24 21:57:27 | INFO     |   [OK] DOS-018 → Non-Compliant (2 findings) [2.25s]
+2026-06-24 21:57:27 | INFO     | 
+[019/100] Processing dossier_019
+2026-06-24 21:57:27 | INFO     |   [PDF] Loading: data/dossier_019/credit_bureau.pdf
+2026-06-24 21:57:27 | INFO     |   [PDF] Extracted 1 page(s), 680 characters
+2026-06-24 21:57:27 | INFO     |   [JSON] Loading: data/dossier_019/client_profile.json
+2026-06-24 21:57:27 | INFO     |   [JSON] Profile loaded: Javier Gilberto de la O Camacho | Declared income: $8,523.70/mo
+2026-06-24 21:57:27 | INFO     |   [CSV] Loading: data/dossier_019/transactions.csv
+2026-06-24 21:57:27 | INFO     |   [CSV] 139 transactions | Avg payroll deposit: $8,805.27/mo
+2026-06-24 21:57:27 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-019
+2026-06-24 21:57:29 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Javier Gilberto de la O Camacho passes all compliance checks. Credit scor...
+2026-06-24 21:57:29 | INFO     |   [OK] DOS-019 → Compliant (0 findings) [2.14s]
+2026-06-24 21:57:29 | INFO     | 
+[020/100] Processing dossier_020
+2026-06-24 21:57:29 | INFO     |   [PDF] Loading: data/dossier_020/credit_bureau.pdf
+2026-06-24 21:57:29 | INFO     |   [PDF] Extracted 1 page(s), 677 characters
+2026-06-24 21:57:29 | INFO     |   [JSON] Loading: data/dossier_020/client_profile.json
+2026-06-24 21:57:29 | INFO     |   [JSON] Profile loaded: Clemente Patricio Valdés | Declared income: $5,048.25/mo
+2026-06-24 21:57:29 | INFO     |   [CSV] Loading: data/dossier_020/transactions.csv
+2026-06-24 21:57:29 | INFO     |   [CSV] 153 transactions | Avg payroll deposit: $5,160.38/mo
+2026-06-24 21:57:29 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-020
+2026-06-24 21:57:30 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Clemente Patricio Valdés (DOS-020) passes all compliance checks. Credit s...
+2026-06-24 21:57:30 | INFO     |   [OK] DOS-020 → Compliant (0 findings) [1.73s]
+2026-06-24 21:57:30 | INFO     | 
+[021/100] Processing dossier_021
+2026-06-24 21:57:30 | INFO     |   [PDF] Loading: data/dossier_021/credit_bureau.pdf
+2026-06-24 21:57:30 | INFO     |   [PDF] Extracted 1 page(s), 646 characters
+2026-06-24 21:57:30 | INFO     |   [JSON] Loading: data/dossier_021/client_profile.json
+2026-06-24 21:57:30 | INFO     |   [JSON] Profile loaded: Dalia Munguía | Declared income: $11,439.79/mo
+2026-06-24 21:57:30 | INFO     |   [CSV] Loading: data/dossier_021/transactions.csv
+2026-06-24 21:57:30 | INFO     |   [CSV] 163 transactions | Avg payroll deposit: $11,803.90/mo
+2026-06-24 21:57:30 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-021
+2026-06-24 21:57:32 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Dalia Munguía (DOS-021) passes all compliance checks. Credit score of 807...
+2026-06-24 21:57:32 | INFO     |   [OK] DOS-021 → Compliant (0 findings) [1.83s]
+2026-06-24 21:57:32 | INFO     | 
+[022/100] Processing dossier_022
+2026-06-24 21:57:32 | INFO     |   [PDF] Loading: data/dossier_022/credit_bureau.pdf
+2026-06-24 21:57:32 | INFO     |   [PDF] Extracted 1 page(s), 579 characters
+2026-06-24 21:57:32 | INFO     |   [JSON] Loading: data/dossier_022/client_profile.json
+2026-06-24 21:57:32 | INFO     |   [JSON] Profile loaded: Esparta Zepeda | Declared income: $5,806.56/mo
+2026-06-24 21:57:32 | INFO     |   [CSV] Loading: data/dossier_022/transactions.csv
+2026-06-24 21:57:32 | INFO     |   [CSV] 150 transactions | Avg payroll deposit: $5,924.45/mo
+2026-06-24 21:57:32 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-022
+2026-06-24 21:57:34 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Esparta Zepeda (DOS-022) passes all compliance checks. Credit score of 82...
+2026-06-24 21:57:34 | INFO     |   [OK] DOS-022 → Compliant (0 findings) [1.63s]
+2026-06-24 21:57:34 | INFO     | 
+[023/100] Processing dossier_023
+2026-06-24 21:57:34 | INFO     |   [PDF] Loading: data/dossier_023/credit_bureau.pdf
+2026-06-24 21:57:34 | INFO     |   [PDF] Extracted 1 page(s), 746 characters
+2026-06-24 21:57:34 | INFO     |   [JSON] Loading: data/dossier_023/client_profile.json
+2026-06-24 21:57:34 | INFO     |   [JSON] Profile loaded: Anabel Teresa Cardenas | Declared income: $4,815.30/mo
+2026-06-24 21:57:34 | INFO     |   [CSV] Loading: data/dossier_023/transactions.csv
+2026-06-24 21:57:34 | INFO     |   [CSV] 143 transactions | Avg payroll deposit: $5,028.40/mo
+2026-06-24 21:57:34 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-023
+2026-06-24 21:57:36 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Anabel Teresa Cardenas (DOS-023) passes all compliance checks. Credit sco...
+2026-06-24 21:57:36 | INFO     |   [OK] DOS-023 → Compliant (0 findings) [2.47s]
+2026-06-24 21:57:36 | INFO     | 
+[024/100] Processing dossier_024
+2026-06-24 21:57:36 | INFO     |   [PDF] Loading: data/dossier_024/credit_bureau.pdf
+2026-06-24 21:57:36 | INFO     |   [PDF] Extracted 1 page(s), 680 characters
+2026-06-24 21:57:36 | INFO     |   [JSON] Loading: data/dossier_024/client_profile.json
+2026-06-24 21:57:36 | INFO     |   [JSON] Profile loaded: Alfonso Pedro Crespo | Declared income: $5,846.59/mo
+2026-06-24 21:57:36 | INFO     |   [CSV] Loading: data/dossier_024/transactions.csv
+2026-06-24 21:57:36 | INFO     |   [CSV] 141 transactions | Avg payroll deposit: $6,288.98/mo
+2026-06-24 21:57:36 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-024
+2026-06-24 21:57:38 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Alfonso Pedro Crespo (DOS-024) presents two compliance violations: (1) In...
+2026-06-24 21:57:38 | INFO     |   [OK] DOS-024 → Non-Compliant (2 findings) [1.86s]
+2026-06-24 21:57:38 | INFO     | 
+[025/100] Processing dossier_025
+2026-06-24 21:57:38 | INFO     |   [PDF] Loading: data/dossier_025/credit_bureau.pdf
+2026-06-24 21:57:38 | INFO     |   [PDF] Extracted 1 page(s), 737 characters
+2026-06-24 21:57:38 | INFO     |   [JSON] Loading: data/dossier_025/client_profile.json
+2026-06-24 21:57:38 | INFO     |   [JSON] Profile loaded: Ing. Martín Madrigal | Declared income: $4,418.09/mo
+2026-06-24 21:57:38 | INFO     |   [CSV] Loading: data/dossier_025/transactions.csv
+2026-06-24 21:57:38 | INFO     |   [CSV] 150 transactions | Avg payroll deposit: $4,608.66/mo
+2026-06-24 21:57:38 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-025
+2026-06-24 21:57:40 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Ing. Martín Madrigal (DOS-025) passes all compliance checks. Credit score...
+2026-06-24 21:57:40 | INFO     |   [OK] DOS-025 → Compliant (0 findings) [2.09s]
+2026-06-24 21:57:40 | INFO     | 
+[026/100] Processing dossier_026
+2026-06-24 21:57:40 | INFO     |   [PDF] Loading: data/dossier_026/credit_bureau.pdf
+2026-06-24 21:57:40 | INFO     |   [PDF] Extracted 1 page(s), 678 characters
+2026-06-24 21:57:40 | INFO     |   [JSON] Loading: data/dossier_026/client_profile.json
+2026-06-24 21:57:40 | INFO     |   [JSON] Profile loaded: María José Ceja Orta | Declared income: $9,830.54/mo
+2026-06-24 21:57:40 | INFO     |   [CSV] Loading: data/dossier_026/transactions.csv
+2026-06-24 21:57:40 | INFO     |   [CSV] 145 transactions | Avg payroll deposit: $7,632.86/mo
+2026-06-24 21:57:40 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-026
+2026-06-24 21:57:42 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client María José Ceja Orta (DOS-026) flagged for two violations: (1) Income dis...
+2026-06-24 21:57:42 | INFO     |   [OK] DOS-026 → Non-Compliant (2 findings) [1.84s]
+2026-06-24 21:57:42 | INFO     | 
+[027/100] Processing dossier_027
+2026-06-24 21:57:42 | INFO     |   [PDF] Loading: data/dossier_027/credit_bureau.pdf
+2026-06-24 21:57:42 | INFO     |   [PDF] Extracted 1 page(s), 738 characters
+2026-06-24 21:57:42 | INFO     |   [JSON] Loading: data/dossier_027/client_profile.json
+2026-06-24 21:57:42 | INFO     |   [JSON] Profile loaded: Georgina Calvillo | Declared income: $6,215.55/mo
+2026-06-24 21:57:42 | INFO     |   [CSV] Loading: data/dossier_027/transactions.csv
+2026-06-24 21:57:42 | INFO     |   [CSV] 131 transactions | Avg payroll deposit: $6,260.12/mo
+2026-06-24 21:57:42 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-027
+2026-06-24 21:57:44 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Georgina Calvillo (DOS-027) passes all compliance checks. Credit score of...
+2026-06-24 21:57:44 | INFO     |   [OK] DOS-027 → Compliant (0 findings) [1.65s]
+2026-06-24 21:57:44 | INFO     | 
+[028/100] Processing dossier_028
+2026-06-24 21:57:44 | INFO     |   [PDF] Loading: data/dossier_028/credit_bureau.pdf
+2026-06-24 21:57:44 | INFO     |   [PDF] Extracted 1 page(s), 843 characters
+2026-06-24 21:57:44 | INFO     |   [JSON] Loading: data/dossier_028/client_profile.json
+2026-06-24 21:57:44 | INFO     |   [JSON] Profile loaded: Rebeca Yeni Montez Bermúdez | Declared income: $4,723.29/mo
+2026-06-24 21:57:44 | INFO     |   [CSV] Loading: data/dossier_028/transactions.csv
+2026-06-24 21:57:44 | INFO     |   [CSV] 159 transactions | Avg payroll deposit: $3,386.43/mo
+2026-06-24 21:57:44 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-028
+2026-06-24 21:57:46 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Rebeca Yeni Montez Bermúdez (DOS-028) fails compliance on two critical vi...
+2026-06-24 21:57:46 | INFO     |   [OK] DOS-028 → Non-Compliant (2 findings) [1.95s]
+2026-06-24 21:57:46 | INFO     | 
+[029/100] Processing dossier_029
+2026-06-24 21:57:46 | INFO     |   [PDF] Loading: data/dossier_029/credit_bureau.pdf
+2026-06-24 21:57:46 | INFO     |   [PDF] Extracted 1 page(s), 783 characters
+2026-06-24 21:57:46 | INFO     |   [JSON] Loading: data/dossier_029/client_profile.json
+2026-06-24 21:57:46 | INFO     |   [JSON] Profile loaded: Zoé Emilia Montes | Declared income: $12,127.23/mo
+2026-06-24 21:57:46 | INFO     |   [CSV] Loading: data/dossier_029/transactions.csv
+2026-06-24 21:57:46 | INFO     |   [CSV] 155 transactions | Avg payroll deposit: $8,672.03/mo
+2026-06-24 21:57:46 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-029
+2026-06-24 21:57:47 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Client Zoé Emilia Montes (DOS-029) declares monthly income of $12,127.23 but act...
+2026-06-24 21:57:47 | INFO     |   [OK] DOS-029 → Non-Compliant (1 findings) [1.44s]
+2026-06-24 21:57:47 | INFO     | 
+[030/100] Processing dossier_030
+2026-06-24 21:57:47 | INFO     |   [PDF] Loading: data/dossier_030/credit_bureau.pdf
+2026-06-24 21:57:47 | INFO     |   [PDF] Extracted 1 page(s), 857 characters
+2026-06-24 21:57:47 | INFO     |   [JSON] Loading: data/dossier_030/client_profile.json
+2026-06-24 21:57:47 | INFO     |   [JSON] Profile loaded: María Elena Girón Mares | Declared income: $3,535.87/mo
+2026-06-24 21:57:47 | INFO     |   [CSV] Loading: data/dossier_030/transactions.csv
+2026-06-24 21:57:47 | INFO     |   [CSV] 140 transactions | Avg payroll deposit: $2,516.35/mo
+2026-06-24 21:57:47 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-030
+2026-06-24 21:57:50 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client María Elena Girón Mares (DOS-030) flagged for two violations: (1) Income ...
+2026-06-24 21:57:50 | INFO     |   [OK] DOS-030 → Non-Compliant (2 findings) [2.49s]
+2026-06-24 21:57:50 | INFO     | 
+[031/100] Processing dossier_031
+2026-06-24 21:57:50 | INFO     |   [PDF] Loading: data/dossier_031/credit_bureau.pdf
+2026-06-24 21:57:50 | INFO     |   [PDF] Extracted 1 page(s), 770 characters
+2026-06-24 21:57:50 | INFO     |   [JSON] Loading: data/dossier_031/client_profile.json
+2026-06-24 21:57:50 | INFO     |   [JSON] Profile loaded: Hermelinda Hilda Murillo Lara | Declared income: $5,770.28/mo
+2026-06-24 21:57:50 | INFO     |   [CSV] Loading: data/dossier_031/transactions.csv
+2026-06-24 21:57:50 | INFO     |   [CSV] 130 transactions | Avg payroll deposit: $5,662.48/mo
+2026-06-24 21:57:50 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-031
+2026-06-24 21:57:51 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Hermelinda Hilda Murillo Lara (DOS-031) passes all compliance checks. Cre...
+2026-06-24 21:57:51 | INFO     |   [OK] DOS-031 → Compliant (0 findings) [1.7s]
+2026-06-24 21:57:51 | INFO     | 
+[032/100] Processing dossier_032
+2026-06-24 21:57:51 | INFO     |   [PDF] Loading: data/dossier_032/credit_bureau.pdf
+2026-06-24 21:57:51 | INFO     |   [PDF] Extracted 1 page(s), 815 characters
+2026-06-24 21:57:51 | INFO     |   [JSON] Loading: data/dossier_032/client_profile.json
+2026-06-24 21:57:51 | INFO     |   [JSON] Profile loaded: Jaime Ruelas | Declared income: $5,870.28/mo
+2026-06-24 21:57:51 | INFO     |   [CSV] Loading: data/dossier_032/transactions.csv
+2026-06-24 21:57:51 | INFO     |   [CSV] 136 transactions | Avg payroll deposit: $4,188.73/mo
+2026-06-24 21:57:51 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-032
+2026-06-24 21:57:53 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Jaime Ruelas (DOS-032) fails compliance on two critical violations: (1) C...
+2026-06-24 21:57:53 | INFO     |   [OK] DOS-032 → Non-Compliant (2 findings) [1.87s]
+2026-06-24 21:57:53 | INFO     | 
+[033/100] Processing dossier_033
+2026-06-24 21:57:53 | INFO     |   [PDF] Loading: data/dossier_033/credit_bureau.pdf
+2026-06-24 21:57:53 | INFO     |   [PDF] Extracted 1 page(s), 738 characters
+2026-06-24 21:57:53 | INFO     |   [JSON] Loading: data/dossier_033/client_profile.json
+2026-06-24 21:57:53 | INFO     |   [JSON] Profile loaded: Aldo Sergio Luevano Prado | Declared income: $7,629.23/mo
+2026-06-24 21:57:53 | INFO     |   [CSV] Loading: data/dossier_033/transactions.csv
+2026-06-24 21:57:53 | INFO     |   [CSV] 137 transactions | Avg payroll deposit: $7,378.14/mo
+2026-06-24 21:57:53 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-033
+2026-06-24 21:57:55 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Aldo Sergio Luevano Prado (DOS-033) passes all compliance checks. Credit ...
+2026-06-24 21:57:55 | INFO     |   [OK] DOS-033 → Compliant (0 findings) [2.02s]
+2026-06-24 21:57:55 | INFO     | 
+[034/100] Processing dossier_034
+2026-06-24 21:57:55 | INFO     |   [PDF] Loading: data/dossier_034/credit_bureau.pdf
+2026-06-24 21:57:55 | INFO     |   [PDF] Extracted 1 page(s), 508 characters
+2026-06-24 21:57:55 | INFO     |   [JSON] Loading: data/dossier_034/client_profile.json
+2026-06-24 21:57:55 | INFO     |   [JSON] Profile loaded: Georgina Ruby Guerra | Declared income: $9,820.21/mo
+2026-06-24 21:57:55 | INFO     |   [CSV] Loading: data/dossier_034/transactions.csv
+2026-06-24 21:57:55 | INFO     |   [CSV] 151 transactions | Avg payroll deposit: $10,576.17/mo
+2026-06-24 21:57:55 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-034
+2026-06-24 21:57:57 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Georgina Ruby Guerra (DOS-034) passes all compliance checks. Credit score...
+2026-06-24 21:57:57 | INFO     |   [OK] DOS-034 → Compliant (0 findings) [1.85s]
+2026-06-24 21:57:57 | INFO     | 
+[035/100] Processing dossier_035
+2026-06-24 21:57:57 | INFO     |   [PDF] Loading: data/dossier_035/credit_bureau.pdf
+2026-06-24 21:57:57 | INFO     |   [PDF] Extracted 1 page(s), 496 characters
+2026-06-24 21:57:57 | INFO     |   [JSON] Loading: data/dossier_035/client_profile.json
+2026-06-24 21:57:57 | INFO     |   [JSON] Profile loaded: Daniel Humberto Jaimes Ybarra | Declared income: $4,038.14/mo
+2026-06-24 21:57:57 | INFO     |   [CSV] Loading: data/dossier_035/transactions.csv
+2026-06-24 21:57:57 | INFO     |   [CSV] 159 transactions | Avg payroll deposit: $4,347.36/mo
+2026-06-24 21:57:57 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-035
+2026-06-24 21:57:59 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client DOS-035 passes all compliance checks. Credit score of 735 is acceptable. ...
+2026-06-24 21:57:59 | INFO     |   [OK] DOS-035 → Compliant (0 findings) [1.63s]
+2026-06-24 21:57:59 | INFO     | 
+[036/100] Processing dossier_036
+2026-06-24 21:57:59 | INFO     |   [PDF] Loading: data/dossier_036/credit_bureau.pdf
+2026-06-24 21:57:59 | INFO     |   [PDF] Extracted 1 page(s), 687 characters
+2026-06-24 21:57:59 | INFO     |   [JSON] Loading: data/dossier_036/client_profile.json
+2026-06-24 21:57:59 | INFO     |   [JSON] Profile loaded: Asunción Alta  Gracia Arenas | Declared income: $14,254.60/mo
+2026-06-24 21:57:59 | INFO     |   [CSV] Loading: data/dossier_036/transactions.csv
+2026-06-24 21:57:59 | INFO     |   [CSV] 140 transactions | Avg payroll deposit: $11,324.56/mo
+2026-06-24 21:57:59 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-036
+2026-06-24 21:58:01 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Asunción Alta Gracia Arenas (DOS-036) flagged for two violations: (1) Inc...
+2026-06-24 21:58:01 | INFO     |   [OK] DOS-036 → Non-Compliant (2 findings) [2.22s]
+2026-06-24 21:58:01 | INFO     | 
+[037/100] Processing dossier_037
+2026-06-24 21:58:01 | INFO     |   [PDF] Loading: data/dossier_037/credit_bureau.pdf
+2026-06-24 21:58:01 | INFO     |   [PDF] Extracted 1 page(s), 871 characters
+2026-06-24 21:58:01 | INFO     |   [JSON] Loading: data/dossier_037/client_profile.json
+2026-06-24 21:58:01 | INFO     |   [JSON] Profile loaded: Dra. Helena Puga | Declared income: $3,603.58/mo
+2026-06-24 21:58:01 | INFO     |   [CSV] Loading: data/dossier_037/transactions.csv
+2026-06-24 21:58:01 | INFO     |   [CSV] 153 transactions | Avg payroll deposit: $3,725.53/mo
+2026-06-24 21:58:01 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-037
+2026-06-24 21:58:03 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Dra. Helena Puga (DOS-037) passes all compliance checks. Credit score of 740 is ...
+2026-06-24 21:58:03 | INFO     |   [OK] DOS-037 → Compliant (0 findings) [1.76s]
+2026-06-24 21:58:03 | INFO     | 
+[038/100] Processing dossier_038
+2026-06-24 21:58:03 | INFO     |   [PDF] Loading: data/dossier_038/credit_bureau.pdf
+2026-06-24 21:58:03 | INFO     |   [PDF] Extracted 1 page(s), 630 characters
+2026-06-24 21:58:03 | INFO     |   [JSON] Loading: data/dossier_038/client_profile.json
+2026-06-24 21:58:03 | INFO     |   [JSON] Profile loaded: Dr. Zacarías Molina | Declared income: $5,154.84/mo
+2026-06-24 21:58:03 | INFO     |   [CSV] Loading: data/dossier_038/transactions.csv
+2026-06-24 21:58:03 | INFO     |   [CSV] 154 transactions | Avg payroll deposit: $4,940.80/mo
+2026-06-24 21:58:03 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-038
+2026-06-24 21:58:08 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Dr. Molina's declared monthly income ($5,154.84) exceeds actual payroll deposits...
+2026-06-24 21:58:08 | INFO     |   [OK] DOS-038 → Non-Compliant (1 findings) [4.91s]
+2026-06-24 21:58:08 | INFO     | 
+[039/100] Processing dossier_039
+2026-06-24 21:58:08 | INFO     |   [PDF] Loading: data/dossier_039/credit_bureau.pdf
+2026-06-24 21:58:08 | INFO     |   [PDF] Extracted 1 page(s), 747 characters
+2026-06-24 21:58:08 | INFO     |   [JSON] Loading: data/dossier_039/client_profile.json
+2026-06-24 21:58:08 | INFO     |   [JSON] Profile loaded: Ernesto Patricio Abreu | Declared income: $8,975.25/mo
+2026-06-24 21:58:08 | INFO     |   [CSV] Loading: data/dossier_039/transactions.csv
+2026-06-24 21:58:08 | INFO     |   [CSV] 148 transactions | Avg payroll deposit: $8,413.50/mo
+2026-06-24 21:58:08 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-039
+2026-06-24 21:58:13 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Client Ernesto Patricio Abreu (DOS-039) shows a 6.7% income discrepancy between ...
+2026-06-24 21:58:13 | INFO     |   [OK] DOS-039 → Non-Compliant (1 findings) [5.11s]
+2026-06-24 21:58:13 | INFO     | 
+[040/100] Processing dossier_040
+2026-06-24 21:58:13 | INFO     |   [PDF] Loading: data/dossier_040/credit_bureau.pdf
+2026-06-24 21:58:13 | INFO     |   [PDF] Extracted 1 page(s), 640 characters
+2026-06-24 21:58:13 | INFO     |   [JSON] Loading: data/dossier_040/client_profile.json
+2026-06-24 21:58:13 | INFO     |   [JSON] Profile loaded: Diego Cristobal Barela | Declared income: $9,144.91/mo
+2026-06-24 21:58:13 | INFO     |   [CSV] Loading: data/dossier_040/transactions.csv
+2026-06-24 21:58:13 | INFO     |   [CSV] 157 transactions | Avg payroll deposit: $9,752.12/mo
+2026-06-24 21:58:13 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-040
+2026-06-24 21:58:15 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Diego Cristobal Barela (DOS-040) passes all compliance checks. Credit score of 7...
+2026-06-24 21:58:15 | INFO     |   [OK] DOS-040 → Compliant (0 findings) [1.67s]
+2026-06-24 21:58:15 | INFO     | 
+[041/100] Processing dossier_041
+2026-06-24 21:58:15 | INFO     |   [PDF] Loading: data/dossier_041/credit_bureau.pdf
+2026-06-24 21:58:15 | INFO     |   [PDF] Extracted 1 page(s), 772 characters
+2026-06-24 21:58:15 | INFO     |   [JSON] Loading: data/dossier_041/client_profile.json
+2026-06-24 21:58:15 | INFO     |   [JSON] Profile loaded: Esther Judith Prado | Declared income: $3,477.79/mo
+2026-06-24 21:58:15 | INFO     |   [CSV] Loading: data/dossier_041/transactions.csv
+2026-06-24 21:58:15 | INFO     |   [CSV] 152 transactions | Avg payroll deposit: $3,552.20/mo
+2026-06-24 21:58:15 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-041
+2026-06-24 21:58:17 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Esther Judith Prado (DOS-041) passes all compliance checks. Credit score ...
+2026-06-24 21:58:17 | INFO     |   [OK] DOS-041 → Compliant (0 findings) [2.42s]
+2026-06-24 21:58:17 | INFO     | 
+[042/100] Processing dossier_042
+2026-06-24 21:58:17 | INFO     |   [PDF] Loading: data/dossier_042/credit_bureau.pdf
+2026-06-24 21:58:17 | INFO     |   [PDF] Extracted 1 page(s), 592 characters
+2026-06-24 21:58:17 | INFO     |   [JSON] Loading: data/dossier_042/client_profile.json
+2026-06-24 21:58:17 | INFO     |   [JSON] Profile loaded: Aldonza Espinal Cornejo | Declared income: $4,291.68/mo
+2026-06-24 21:58:17 | INFO     |   [CSV] Loading: data/dossier_042/transactions.csv
+2026-06-24 21:58:17 | INFO     |   [CSV] 148 transactions | Avg payroll deposit: $4,156.48/mo
+2026-06-24 21:58:17 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-042
+2026-06-24 21:58:19 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Aldonza Espinal Cornejo (DOS-042) passes all compliance checks. Credit sc...
+2026-06-24 21:58:19 | INFO     |   [OK] DOS-042 → Compliant (0 findings) [1.82s]
+2026-06-24 21:58:19 | INFO     | 
+[043/100] Processing dossier_043
+2026-06-24 21:58:19 | INFO     |   [PDF] Loading: data/dossier_043/credit_bureau.pdf
+2026-06-24 21:58:19 | INFO     |   [PDF] Extracted 1 page(s), 768 characters
+2026-06-24 21:58:19 | INFO     |   [JSON] Loading: data/dossier_043/client_profile.json
+2026-06-24 21:58:19 | INFO     |   [JSON] Profile loaded: Lic. Víctor Ochoa | Declared income: $8,021.76/mo
+2026-06-24 21:58:19 | INFO     |   [CSV] Loading: data/dossier_043/transactions.csv
+2026-06-24 21:58:19 | INFO     |   [CSV] 157 transactions | Avg payroll deposit: $7,904.29/mo
+2026-06-24 21:58:19 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-043
+2026-06-24 21:58:20 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Lic. Víctor Ochoa (DOS-043) passes all compliance checks. Credit score of...
+2026-06-24 21:58:21 | INFO     |   [OK] DOS-043 → Compliant (0 findings) [1.62s]
+2026-06-24 21:58:21 | INFO     | 
+[044/100] Processing dossier_044
+2026-06-24 21:58:21 | INFO     |   [PDF] Loading: data/dossier_044/credit_bureau.pdf
+2026-06-24 21:58:21 | INFO     |   [PDF] Extracted 1 page(s), 584 characters
+2026-06-24 21:58:21 | INFO     |   [JSON] Loading: data/dossier_044/client_profile.json
+2026-06-24 21:58:21 | INFO     |   [JSON] Profile loaded: Sra. Florencia Nevárez | Declared income: $4,803.15/mo
+2026-06-24 21:58:21 | INFO     |   [CSV] Loading: data/dossier_044/transactions.csv
+2026-06-24 21:58:21 | INFO     |   [CSV] 145 transactions | Avg payroll deposit: $4,744.55/mo
+2026-06-24 21:58:21 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-044
+2026-06-24 21:58:22 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Sra. Florencia Nevárez (DOS-044) passes all compliance checks. Credit score of 6...
+2026-06-24 21:58:22 | INFO     |   [OK] DOS-044 → Compliant (0 findings) [1.52s]
+2026-06-24 21:58:22 | INFO     | 
+[045/100] Processing dossier_045
+2026-06-24 21:58:22 | INFO     |   [PDF] Loading: data/dossier_045/credit_bureau.pdf
+2026-06-24 21:58:22 | INFO     |   [PDF] Extracted 1 page(s), 816 characters
+2026-06-24 21:58:22 | INFO     |   [JSON] Loading: data/dossier_045/client_profile.json
+2026-06-24 21:58:22 | INFO     |   [JSON] Profile loaded: Lic. Miguel Ángel Alva | Declared income: $10,159.92/mo
+2026-06-24 21:58:22 | INFO     |   [CSV] Loading: data/dossier_045/transactions.csv
+2026-06-24 21:58:22 | INFO     |   [CSV] 152 transactions | Avg payroll deposit: $10,971.02/mo
+2026-06-24 21:58:22 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-045
+2026-06-24 21:58:24 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client DOS-045 (Lic. Miguel Ángel Alva) passes all compliance checks. Credit sco...
+2026-06-24 21:58:24 | INFO     |   [OK] DOS-045 → Compliant (0 findings) [1.96s]
+2026-06-24 21:58:24 | INFO     | 
+[046/100] Processing dossier_046
+2026-06-24 21:58:24 | INFO     |   [PDF] Loading: data/dossier_046/credit_bureau.pdf
+2026-06-24 21:58:24 | INFO     |   [PDF] Extracted 1 page(s), 585 characters
+2026-06-24 21:58:24 | INFO     |   [JSON] Loading: data/dossier_046/client_profile.json
+2026-06-24 21:58:24 | INFO     |   [JSON] Profile loaded: Marisol Pelayo | Declared income: $8,062.16/mo
+2026-06-24 21:58:24 | INFO     |   [CSV] Loading: data/dossier_046/transactions.csv
+2026-06-24 21:58:24 | INFO     |   [CSV] 156 transactions | Avg payroll deposit: $8,357.78/mo
+2026-06-24 21:58:24 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-046
+2026-06-24 21:58:26 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Marisol Pelayo (DOS-046) passes all compliance checks. Credit score is ex...
+2026-06-24 21:58:26 | INFO     |   [OK] DOS-046 → Compliant (0 findings) [1.98s]
+2026-06-24 21:58:26 | INFO     | 
+[047/100] Processing dossier_047
+2026-06-24 21:58:26 | INFO     |   [PDF] Loading: data/dossier_047/credit_bureau.pdf
+2026-06-24 21:58:26 | INFO     |   [PDF] Extracted 1 page(s), 494 characters
+2026-06-24 21:58:26 | INFO     |   [JSON] Loading: data/dossier_047/client_profile.json
+2026-06-24 21:58:26 | INFO     |   [JSON] Profile loaded: Lic. Alberto Tijerina | Declared income: $6,896.23/mo
+2026-06-24 21:58:26 | INFO     |   [CSV] Loading: data/dossier_047/transactions.csv
+2026-06-24 21:58:26 | INFO     |   [CSV] 156 transactions | Avg payroll deposit: $7,127.13/mo
+2026-06-24 21:58:26 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-047
+2026-06-24 21:58:28 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Lic. Alberto Tijerina (DOS-047) passes all compliance checks. Credit scor...
+2026-06-24 21:58:28 | INFO     |   [OK] DOS-047 → Compliant (0 findings) [1.67s]
+2026-06-24 21:58:28 | INFO     | 
+[048/100] Processing dossier_048
+2026-06-24 21:58:28 | INFO     |   [PDF] Loading: data/dossier_048/credit_bureau.pdf
+2026-06-24 21:58:28 | INFO     |   [PDF] Extracted 1 page(s), 496 characters
+2026-06-24 21:58:28 | INFO     |   [JSON] Loading: data/dossier_048/client_profile.json
+2026-06-24 21:58:28 | INFO     |   [JSON] Profile loaded: Judith Zarate Lucio | Declared income: $10,628.46/mo
+2026-06-24 21:58:28 | INFO     |   [CSV] Loading: data/dossier_048/transactions.csv
+2026-06-24 21:58:28 | INFO     |   [CSV] 150 transactions | Avg payroll deposit: $11,264.62/mo
+2026-06-24 21:58:28 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-048
+2026-06-24 21:58:30 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Client Judith Zarate Lucio (DOS-048) presents one compliance violation: declared...
+2026-06-24 21:58:30 | INFO     |   [OK] DOS-048 → Non-Compliant (1 findings) [2.12s]
+2026-06-24 21:58:30 | INFO     | 
+[049/100] Processing dossier_049
+2026-06-24 21:58:30 | INFO     |   [PDF] Loading: data/dossier_049/credit_bureau.pdf
+2026-06-24 21:58:30 | INFO     |   [PDF] Extracted 1 page(s), 708 characters
+2026-06-24 21:58:30 | INFO     |   [JSON] Loading: data/dossier_049/client_profile.json
+2026-06-24 21:58:30 | INFO     |   [JSON] Profile loaded: Gabriel Modesto Jaimes Armenta | Declared income: $4,924.33/mo
+2026-06-24 21:58:30 | INFO     |   [CSV] Loading: data/dossier_049/transactions.csv
+2026-06-24 21:58:30 | INFO     |   [CSV] 143 transactions | Avg payroll deposit: $4,855.42/mo
+2026-06-24 21:58:30 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-049
+2026-06-24 21:58:32 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Gabriel Modesto Jaimes Armenta (DOS-049) passes all compliance checks. De...
+2026-06-24 21:58:32 | INFO     |   [OK] DOS-049 → Compliant (0 findings) [2.06s]
+2026-06-24 21:58:32 | INFO     | 
+[050/100] Processing dossier_050
+2026-06-24 21:58:32 | INFO     |   [PDF] Loading: data/dossier_050/credit_bureau.pdf
+2026-06-24 21:58:32 | INFO     |   [PDF] Extracted 1 page(s), 589 characters
+2026-06-24 21:58:32 | INFO     |   [JSON] Loading: data/dossier_050/client_profile.json
+2026-06-24 21:58:32 | INFO     |   [JSON] Profile loaded: Horacio Roque | Declared income: $4,751.94/mo
+2026-06-24 21:58:32 | INFO     |   [CSV] Loading: data/dossier_050/transactions.csv
+2026-06-24 21:58:32 | INFO     |   [CSV] 140 transactions | Avg payroll deposit: $4,466.65/mo
+2026-06-24 21:58:32 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-050
+2026-06-24 21:58:34 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Horacio Roque (DOS-050) presents two compliance violations: (1) Income di...
+2026-06-24 21:58:34 | INFO     |   [OK] DOS-050 → Non-Compliant (2 findings) [1.94s]
+2026-06-24 21:58:34 | INFO     | 
+[051/100] Processing dossier_051
+2026-06-24 21:58:34 | INFO     |   [PDF] Loading: data/dossier_051/credit_bureau.pdf
+2026-06-24 21:58:34 | INFO     |   [PDF] Extracted 1 page(s), 805 characters
+2026-06-24 21:58:34 | INFO     |   [JSON] Loading: data/dossier_051/client_profile.json
+2026-06-24 21:58:34 | INFO     |   [JSON] Profile loaded: Eduardo Franco | Declared income: $6,590.85/mo
+2026-06-24 21:58:34 | INFO     |   [CSV] Loading: data/dossier_051/transactions.csv
+2026-06-24 21:58:34 | INFO     |   [CSV] 154 transactions | Avg payroll deposit: $6,476.77/mo
+2026-06-24 21:58:34 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-051
+2026-06-24 21:58:35 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Eduardo Franco (DOS-051) passes all compliance checks. Credit score of 774 is ex...
+2026-06-24 21:58:35 | INFO     |   [OK] DOS-051 → Compliant (0 findings) [1.64s]
+2026-06-24 21:58:35 | INFO     | 
+[052/100] Processing dossier_052
+2026-06-24 21:58:35 | INFO     |   [PDF] Loading: data/dossier_052/credit_bureau.pdf
+2026-06-24 21:58:35 | INFO     |   [PDF] Extracted 1 page(s), 756 characters
+2026-06-24 21:58:35 | INFO     |   [JSON] Loading: data/dossier_052/client_profile.json
+2026-06-24 21:58:35 | INFO     |   [JSON] Profile loaded: Andrea Sandoval Medina | Declared income: $9,932.10/mo
+2026-06-24 21:58:35 | INFO     |   [CSV] Loading: data/dossier_052/transactions.csv
+2026-06-24 21:58:35 | INFO     |   [CSV] 158 transactions | Avg payroll deposit: $10,353.30/mo
+2026-06-24 21:58:35 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-052
+2026-06-24 21:58:37 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Andrea Sandoval Medina (DOS-052) passes all compliance checks. Credit score of 7...
+2026-06-24 21:58:37 | INFO     |   [OK] DOS-052 → Compliant (0 findings) [1.71s]
+2026-06-24 21:58:37 | INFO     | 
+[053/100] Processing dossier_053
+2026-06-24 21:58:37 | INFO     |   [PDF] Loading: data/dossier_053/credit_bureau.pdf
+2026-06-24 21:58:37 | INFO     |   [PDF] Extracted 1 page(s), 506 characters
+2026-06-24 21:58:37 | INFO     |   [JSON] Loading: data/dossier_053/client_profile.json
+2026-06-24 21:58:37 | INFO     |   [JSON] Profile loaded: Felipe Pedro Mayorga Cervantes | Declared income: $3,627.10/mo
+2026-06-24 21:58:37 | INFO     |   [CSV] Loading: data/dossier_053/transactions.csv
+2026-06-24 21:58:37 | INFO     |   [CSV] 156 transactions | Avg payroll deposit: $3,903.35/mo
+2026-06-24 21:58:37 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-053
+2026-06-24 21:58:39 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Felipe Pedro Mayorga Cervantes (DOS-053) passes all compliance checks. Cr...
+2026-06-24 21:58:39 | INFO     |   [OK] DOS-053 → Compliant (0 findings) [1.73s]
+2026-06-24 21:58:39 | INFO     | 
+[054/100] Processing dossier_054
+2026-06-24 21:58:39 | INFO     |   [PDF] Loading: data/dossier_054/credit_bureau.pdf
+2026-06-24 21:58:39 | INFO     |   [PDF] Extracted 1 page(s), 717 characters
+2026-06-24 21:58:39 | INFO     |   [JSON] Loading: data/dossier_054/client_profile.json
+2026-06-24 21:58:39 | INFO     |   [JSON] Profile loaded: Jos Benavides Regalado | Declared income: $12,303.72/mo
+2026-06-24 21:58:39 | INFO     |   [CSV] Loading: data/dossier_054/transactions.csv
+2026-06-24 21:58:39 | INFO     |   [CSV] 156 transactions | Avg payroll deposit: $9,716.57/mo
+2026-06-24 21:58:39 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-054
+2026-06-24 21:58:41 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Jos Benavides Regalado (DOS-054) fails compliance on two critical violati...
+2026-06-24 21:58:41 | INFO     |   [OK] DOS-054 → Non-Compliant (2 findings) [2.14s]
+2026-06-24 21:58:41 | INFO     | 
+[055/100] Processing dossier_055
+2026-06-24 21:58:41 | INFO     |   [PDF] Loading: data/dossier_055/credit_bureau.pdf
+2026-06-24 21:58:41 | INFO     |   [PDF] Extracted 1 page(s), 498 characters
+2026-06-24 21:58:41 | INFO     |   [JSON] Loading: data/dossier_055/client_profile.json
+2026-06-24 21:58:41 | INFO     |   [JSON] Profile loaded: Ing. Hernán Olivárez | Declared income: $14,970.33/mo
+2026-06-24 21:58:41 | INFO     |   [CSV] Loading: data/dossier_055/transactions.csv
+2026-06-24 21:58:41 | INFO     |   [CSV] 155 transactions | Avg payroll deposit: $9,471.06/mo
+2026-06-24 21:58:41 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-055
+2026-06-24 21:58:43 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Ing. Hernán Olivárez fails two critical compliance checks: (1) Credit sco...
+2026-06-24 21:58:43 | INFO     |   [OK] DOS-055 → Non-Compliant (2 findings) [1.63s]
+2026-06-24 21:58:43 | INFO     | 
+[056/100] Processing dossier_056
+2026-06-24 21:58:43 | INFO     |   [PDF] Loading: data/dossier_056/credit_bureau.pdf
+2026-06-24 21:58:43 | INFO     |   [PDF] Extracted 1 page(s), 641 characters
+2026-06-24 21:58:43 | INFO     |   [JSON] Loading: data/dossier_056/client_profile.json
+2026-06-24 21:58:43 | INFO     |   [JSON] Profile loaded: Germán Aparicio | Declared income: $8,068.92/mo
+2026-06-24 21:58:43 | INFO     |   [CSV] Loading: data/dossier_056/transactions.csv
+2026-06-24 21:58:43 | INFO     |   [CSV] 136 transactions | Avg payroll deposit: $7,588.32/mo
+2026-06-24 21:58:43 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-056
+2026-06-24 21:58:47 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Client Germán Aparicio (DOS-056) shows one compliance violation: declared monthl...
+2026-06-24 21:58:47 | INFO     |   [OK] DOS-056 → Non-Compliant (1 findings) [4.27s]
+2026-06-24 21:58:47 | INFO     | 
+[057/100] Processing dossier_057
+2026-06-24 21:58:47 | INFO     |   [PDF] Loading: data/dossier_057/credit_bureau.pdf
+2026-06-24 21:58:47 | INFO     |   [PDF] Extracted 1 page(s), 724 characters
+2026-06-24 21:58:47 | INFO     |   [JSON] Loading: data/dossier_057/client_profile.json
+2026-06-24 21:58:47 | INFO     |   [JSON] Profile loaded: Ing. Lilia Galarza | Declared income: $12,077.33/mo
+2026-06-24 21:58:47 | INFO     |   [CSV] Loading: data/dossier_057/transactions.csv
+2026-06-24 21:58:47 | INFO     |   [CSV] 152 transactions | Avg payroll deposit: $11,267.80/mo
+2026-06-24 21:58:47 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-057
+2026-06-24 21:58:49 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Ing. Lilia Galarza (DOS-057) passes all compliance checks. Credit score o...
+2026-06-24 21:58:49 | INFO     |   [OK] DOS-057 → Compliant (0 findings) [1.65s]
+2026-06-24 21:58:49 | INFO     | 
+[058/100] Processing dossier_058
+2026-06-24 21:58:49 | INFO     |   [PDF] Loading: data/dossier_058/credit_bureau.pdf
+2026-06-24 21:58:49 | INFO     |   [PDF] Extracted 1 page(s), 490 characters
+2026-06-24 21:58:49 | INFO     |   [JSON] Loading: data/dossier_058/client_profile.json
+2026-06-24 21:58:49 | INFO     |   [JSON] Profile loaded: Ing. Jesús Acuña | Declared income: $13,898.21/mo
+2026-06-24 21:58:49 | INFO     |   [CSV] Loading: data/dossier_058/transactions.csv
+2026-06-24 21:58:49 | INFO     |   [CSV] 153 transactions | Avg payroll deposit: $9,109.64/mo
+2026-06-24 21:58:49 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-058
+2026-06-24 21:58:51 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 3 | Summary: Client Ing. Jesús Acuña fails three critical compliance checks: (1) Credit score...
+2026-06-24 21:58:51 | INFO     |   [OK] DOS-058 → Non-Compliant (3 findings) [2.05s]
+2026-06-24 21:58:51 | INFO     | 
+[059/100] Processing dossier_059
+2026-06-24 21:58:51 | INFO     |   [PDF] Loading: data/dossier_059/credit_bureau.pdf
+2026-06-24 21:58:51 | INFO     |   [PDF] Extracted 1 page(s), 773 characters
+2026-06-24 21:58:51 | INFO     |   [JSON] Loading: data/dossier_059/client_profile.json
+2026-06-24 21:58:51 | INFO     |   [JSON] Profile loaded: Javier Andrés Manzanares Nazario | Declared income: $4,641.48/mo
+2026-06-24 21:58:51 | INFO     |   [CSV] Loading: data/dossier_059/transactions.csv
+2026-06-24 21:58:51 | INFO     |   [CSV] 153 transactions | Avg payroll deposit: $4,960.88/mo
+2026-06-24 21:58:51 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-059
+2026-06-24 21:58:52 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Javier Andrés Manzanares Nazario (DOS-059) passes all compliance checks. ...
+2026-06-24 21:58:52 | INFO     |   [OK] DOS-059 → Compliant (0 findings) [1.73s]
+2026-06-24 21:58:52 | INFO     | 
+[060/100] Processing dossier_060
+2026-06-24 21:58:52 | INFO     |   [PDF] Loading: data/dossier_060/credit_bureau.pdf
+2026-06-24 21:58:52 | INFO     |   [PDF] Extracted 1 page(s), 587 characters
+2026-06-24 21:58:52 | INFO     |   [JSON] Loading: data/dossier_060/client_profile.json
+2026-06-24 21:58:52 | INFO     |   [JSON] Profile loaded: Renato Bueno | Declared income: $6,867.59/mo
+2026-06-24 21:58:52 | INFO     |   [CSV] Loading: data/dossier_060/transactions.csv
+2026-06-24 21:58:52 | INFO     |   [CSV] 140 transactions | Avg payroll deposit: $6,851.54/mo
+2026-06-24 21:58:52 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-060
+2026-06-24 21:58:54 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Client Renato Bueno (DOS-060) has a 60-day late account with Grupo Herrera y Uli...
+2026-06-24 21:58:54 | INFO     |   [OK] DOS-060 → Non-Compliant (1 findings) [1.67s]
+2026-06-24 21:58:54 | INFO     | 
+[061/100] Processing dossier_061
+2026-06-24 21:58:54 | INFO     |   [PDF] Loading: data/dossier_061/credit_bureau.pdf
+2026-06-24 21:58:54 | INFO     |   [PDF] Extracted 1 page(s), 488 characters
+2026-06-24 21:58:54 | INFO     |   [JSON] Loading: data/dossier_061/client_profile.json
+2026-06-24 21:58:54 | INFO     |   [JSON] Profile loaded: Esteban Quesada | Declared income: $8,988.64/mo
+2026-06-24 21:58:54 | INFO     |   [CSV] Loading: data/dossier_061/transactions.csv
+2026-06-24 21:58:54 | INFO     |   [CSV] 155 transactions | Avg payroll deposit: $9,095.06/mo
+2026-06-24 21:58:54 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-061
+2026-06-24 21:58:56 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Esteban Quesada (DOS-061) passes all compliance checks. Credit score of 8...
+2026-06-24 21:58:56 | INFO     |   [OK] DOS-061 → Compliant (0 findings) [1.68s]
+2026-06-24 21:58:56 | INFO     | 
+[062/100] Processing dossier_062
+2026-06-24 21:58:56 | INFO     |   [PDF] Loading: data/dossier_062/credit_bureau.pdf
+2026-06-24 21:58:56 | INFO     |   [PDF] Extracted 1 page(s), 509 characters
+2026-06-24 21:58:56 | INFO     |   [JSON] Loading: data/dossier_062/client_profile.json
+2026-06-24 21:58:56 | INFO     |   [JSON] Profile loaded: Amelia Reyes | Declared income: $2,762.66/mo
+2026-06-24 21:58:56 | INFO     |   [CSV] Loading: data/dossier_062/transactions.csv
+2026-06-24 21:58:56 | INFO     |   [CSV] 146 transactions | Avg payroll deposit: $2,820.31/mo
+2026-06-24 21:58:56 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-062
+2026-06-24 21:58:58 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Amelia Reyes (DOS-062) passes all compliance checks. Credit score of 782 ...
+2026-06-24 21:58:58 | INFO     |   [OK] DOS-062 → Compliant (0 findings) [2.45s]
+2026-06-24 21:58:58 | INFO     | 
+[063/100] Processing dossier_063
+2026-06-24 21:58:58 | INFO     |   [PDF] Loading: data/dossier_063/credit_bureau.pdf
+2026-06-24 21:58:58 | INFO     |   [PDF] Extracted 1 page(s), 594 characters
+2026-06-24 21:58:58 | INFO     |   [JSON] Loading: data/dossier_063/client_profile.json
+2026-06-24 21:58:58 | INFO     |   [JSON] Profile loaded: Nicolás Villanueva | Declared income: $9,279.21/mo
+2026-06-24 21:58:58 | INFO     |   [CSV] Loading: data/dossier_063/transactions.csv
+2026-06-24 21:58:58 | INFO     |   [CSV] 143 transactions | Avg payroll deposit: $9,057.46/mo
+2026-06-24 21:58:58 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-063
+2026-06-24 21:59:01 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Client Nicolás Villanueva (DOS-063) presents one compliance violation: Account 3...
+2026-06-24 21:59:01 | INFO     |   [OK] DOS-063 → Non-Compliant (1 findings) [2.25s]
+2026-06-24 21:59:01 | INFO     | 
+[064/100] Processing dossier_064
+2026-06-24 21:59:01 | INFO     |   [PDF] Loading: data/dossier_064/credit_bureau.pdf
+2026-06-24 21:59:01 | INFO     |   [PDF] Extracted 1 page(s), 774 characters
+2026-06-24 21:59:01 | INFO     |   [JSON] Loading: data/dossier_064/client_profile.json
+2026-06-24 21:59:01 | INFO     |   [JSON] Profile loaded: Amanda Osorio Torres | Declared income: $7,643.07/mo
+2026-06-24 21:59:01 | INFO     |   [CSV] Loading: data/dossier_064/transactions.csv
+2026-06-24 21:59:01 | INFO     |   [CSV] 159 transactions | Avg payroll deposit: $7,514.40/mo
+2026-06-24 21:59:01 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-064
+2026-06-24 21:59:02 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Amanda Osorio Torres (DOS-064) passes all compliance checks. Credit score of 816...
+2026-06-24 21:59:02 | INFO     |   [OK] DOS-064 → Compliant (0 findings) [1.62s]
+2026-06-24 21:59:02 | INFO     | 
+[065/100] Processing dossier_065
+2026-06-24 21:59:02 | INFO     |   [PDF] Loading: data/dossier_065/credit_bureau.pdf
+2026-06-24 21:59:02 | INFO     |   [PDF] Extracted 1 page(s), 584 characters
+2026-06-24 21:59:02 | INFO     |   [JSON] Loading: data/dossier_065/client_profile.json
+2026-06-24 21:59:02 | INFO     |   [JSON] Profile loaded: Fabiola Olvera Tello | Declared income: $12,240.30/mo
+2026-06-24 21:59:02 | INFO     |   [CSV] Loading: data/dossier_065/transactions.csv
+2026-06-24 21:59:02 | INFO     |   [CSV] 158 transactions | Avg payroll deposit: $8,337.52/mo
+2026-06-24 21:59:02 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-065
+2026-06-24 21:59:04 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Fabiola Olvera Tello (DOS-065) flagged for two critical violations: (1) C...
+2026-06-24 21:59:04 | INFO     |   [OK] DOS-065 → Non-Compliant (2 findings) [1.67s]
+2026-06-24 21:59:04 | INFO     | 
+[066/100] Processing dossier_066
+2026-06-24 21:59:04 | INFO     |   [PDF] Loading: data/dossier_066/credit_bureau.pdf
+2026-06-24 21:59:04 | INFO     |   [PDF] Extracted 1 page(s), 676 characters
+2026-06-24 21:59:04 | INFO     |   [JSON] Loading: data/dossier_066/client_profile.json
+2026-06-24 21:59:04 | INFO     |   [JSON] Profile loaded: Martha Farías | Declared income: $9,171.26/mo
+2026-06-24 21:59:04 | INFO     |   [CSV] Loading: data/dossier_066/transactions.csv
+2026-06-24 21:59:04 | INFO     |   [CSV] 149 transactions | Avg payroll deposit: $9,560.63/mo
+2026-06-24 21:59:04 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-066
+2026-06-24 21:59:06 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Martha Farías (DOS-066) passes all compliance checks. Credit score of 733 is hea...
+2026-06-24 21:59:06 | INFO     |   [OK] DOS-066 → Compliant (0 findings) [1.69s]
+2026-06-24 21:59:06 | INFO     | 
+[067/100] Processing dossier_067
+2026-06-24 21:59:06 | INFO     |   [PDF] Loading: data/dossier_067/credit_bureau.pdf
+2026-06-24 21:59:06 | INFO     |   [PDF] Extracted 1 page(s), 733 characters
+2026-06-24 21:59:06 | INFO     |   [JSON] Loading: data/dossier_067/client_profile.json
+2026-06-24 21:59:06 | INFO     |   [JSON] Profile loaded: Ing. Octavio Benavides | Declared income: $7,682.96/mo
+2026-06-24 21:59:06 | INFO     |   [CSV] Loading: data/dossier_067/transactions.csv
+2026-06-24 21:59:06 | INFO     |   [CSV] 162 transactions | Avg payroll deposit: $8,026.59/mo
+2026-06-24 21:59:06 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-067
+2026-06-24 21:59:07 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Ing. Octavio Benavides (DOS-067) passes all compliance checks. Credit sco...
+2026-06-24 21:59:07 | INFO     |   [OK] DOS-067 → Compliant (0 findings) [1.73s]
+2026-06-24 21:59:07 | INFO     | 
+[068/100] Processing dossier_068
+2026-06-24 21:59:07 | INFO     |   [PDF] Loading: data/dossier_068/credit_bureau.pdf
+2026-06-24 21:59:07 | INFO     |   [PDF] Extracted 1 page(s), 492 characters
+2026-06-24 21:59:07 | INFO     |   [JSON] Loading: data/dossier_068/client_profile.json
+2026-06-24 21:59:07 | INFO     |   [JSON] Profile loaded: Elias Navarro Quiñónez | Declared income: $10,801.36/mo
+2026-06-24 21:59:07 | INFO     |   [CSV] Loading: data/dossier_068/transactions.csv
+2026-06-24 21:59:07 | INFO     |   [CSV] 159 transactions | Avg payroll deposit: $10,710.10/mo
+2026-06-24 21:59:07 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-068
+2026-06-24 21:59:10 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Elias Navarro Quiñónez passes all compliance checks. Credit score of 796 ...
+2026-06-24 21:59:10 | INFO     |   [OK] DOS-068 → Compliant (0 findings) [2.68s]
+2026-06-24 21:59:10 | INFO     | 
+[069/100] Processing dossier_069
+2026-06-24 21:59:10 | INFO     |   [PDF] Loading: data/dossier_069/credit_bureau.pdf
+2026-06-24 21:59:10 | INFO     |   [PDF] Extracted 1 page(s), 645 characters
+2026-06-24 21:59:10 | INFO     |   [JSON] Loading: data/dossier_069/client_profile.json
+2026-06-24 21:59:10 | INFO     |   [JSON] Profile loaded: Clara Montes Soliz | Declared income: $3,227.64/mo
+2026-06-24 21:59:10 | INFO     |   [CSV] Loading: data/dossier_069/transactions.csv
+2026-06-24 21:59:10 | INFO     |   [CSV] 145 transactions | Avg payroll deposit: $3,280.24/mo
+2026-06-24 21:59:10 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-069
+2026-06-24 21:59:12 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Clara Montes Soliz (DOS-069) passes all compliance checks. Credit score of 768 i...
+2026-06-24 21:59:12 | INFO     |   [OK] DOS-069 → Compliant (0 findings) [1.73s]
+2026-06-24 21:59:12 | INFO     | 
+[070/100] Processing dossier_070
+2026-06-24 21:59:12 | INFO     |   [PDF] Loading: data/dossier_070/credit_bureau.pdf
+2026-06-24 21:59:12 | INFO     |   [PDF] Extracted 1 page(s), 685 characters
+2026-06-24 21:59:12 | INFO     |   [JSON] Loading: data/dossier_070/client_profile.json
+2026-06-24 21:59:12 | INFO     |   [JSON] Profile loaded: Elvia Yolanda Saiz Valverde | Declared income: $12,058.69/mo
+2026-06-24 21:59:12 | INFO     |   [CSV] Loading: data/dossier_070/transactions.csv
+2026-06-24 21:59:12 | INFO     |   [CSV] 156 transactions | Avg payroll deposit: $8,882.30/mo
+2026-06-24 21:59:12 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-070
+2026-06-24 21:59:14 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Elvia Yolanda Saiz Valverde (DOS-070) flagged for two violations: (1) Inc...
+2026-06-24 21:59:14 | INFO     |   [OK] DOS-070 → Non-Compliant (2 findings) [1.81s]
+2026-06-24 21:59:14 | INFO     | 
+[071/100] Processing dossier_071
+2026-06-24 21:59:14 | INFO     |   [PDF] Loading: data/dossier_071/credit_bureau.pdf
+2026-06-24 21:59:14 | INFO     |   [PDF] Extracted 1 page(s), 560 characters
+2026-06-24 21:59:14 | INFO     |   [JSON] Loading: data/dossier_071/client_profile.json
+2026-06-24 21:59:14 | INFO     |   [JSON] Profile loaded: Lic. Horacio Cazares | Declared income: $8,074.72/mo
+2026-06-24 21:59:14 | INFO     |   [CSV] Loading: data/dossier_071/transactions.csv
+2026-06-24 21:59:14 | INFO     |   [CSV] 162 transactions | Avg payroll deposit: $8,745.63/mo
+2026-06-24 21:59:14 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-071
+2026-06-24 21:59:15 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Client Lic. Horacio Cazares (DOS-071) shows one compliance violation: declared m...
+2026-06-24 21:59:15 | INFO     |   [OK] DOS-071 → Non-Compliant (1 findings) [1.75s]
+2026-06-24 21:59:15 | INFO     | 
+[072/100] Processing dossier_072
+2026-06-24 21:59:15 | INFO     |   [PDF] Loading: data/dossier_072/credit_bureau.pdf
+2026-06-24 21:59:15 | INFO     |   [PDF] Extracted 1 page(s), 662 characters
+2026-06-24 21:59:15 | INFO     |   [JSON] Loading: data/dossier_072/client_profile.json
+2026-06-24 21:59:15 | INFO     |   [JSON] Profile loaded: Sra. María del Carmen Trejo | Declared income: $8,684.54/mo
+2026-06-24 21:59:15 | INFO     |   [CSV] Loading: data/dossier_072/transactions.csv
+2026-06-24 21:59:15 | INFO     |   [CSV] 145 transactions | Avg payroll deposit: $6,872.79/mo
+2026-06-24 21:59:15 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-072
+2026-06-24 21:59:17 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client María del Carmen Trejo (DOS-072) flagged for two violations: (1) Income d...
+2026-06-24 21:59:17 | INFO     |   [OK] DOS-072 → Non-Compliant (2 findings) [1.82s]
+2026-06-24 21:59:17 | INFO     | 
+[073/100] Processing dossier_073
+2026-06-24 21:59:17 | INFO     |   [PDF] Loading: data/dossier_073/credit_bureau.pdf
+2026-06-24 21:59:17 | INFO     |   [PDF] Extracted 1 page(s), 876 characters
+2026-06-24 21:59:17 | INFO     |   [JSON] Loading: data/dossier_073/client_profile.json
+2026-06-24 21:59:17 | INFO     |   [JSON] Profile loaded: Luis Miguel Abrego Cintrón | Declared income: $7,063.66/mo
+2026-06-24 21:59:17 | INFO     |   [CSV] Loading: data/dossier_073/transactions.csv
+2026-06-24 21:59:17 | INFO     |   [CSV] 162 transactions | Avg payroll deposit: $6,807.82/mo
+2026-06-24 21:59:17 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-073
+2026-06-24 21:59:19 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Luis Miguel Abrego Cintrón (DOS-073) passes all compliance checks. Credit...
+2026-06-24 21:59:19 | INFO     |   [OK] DOS-073 → Compliant (0 findings) [2.34s]
+2026-06-24 21:59:19 | INFO     | 
+[074/100] Processing dossier_074
+2026-06-24 21:59:19 | INFO     |   [PDF] Loading: data/dossier_074/credit_bureau.pdf
+2026-06-24 21:59:19 | INFO     |   [PDF] Extracted 1 page(s), 595 characters
+2026-06-24 21:59:19 | INFO     |   [JSON] Loading: data/dossier_074/client_profile.json
+2026-06-24 21:59:19 | INFO     |   [JSON] Profile loaded: María Teresa Florencia Tamayo | Declared income: $2,695.47/mo
+2026-06-24 21:59:19 | INFO     |   [CSV] Loading: data/dossier_074/transactions.csv
+2026-06-24 21:59:19 | INFO     |   [CSV] 155 transactions | Avg payroll deposit: $2,670.13/mo
+2026-06-24 21:59:19 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-074
+2026-06-24 21:59:21 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: María Teresa Florencia Tamayo (DOS-074) passes all compliance checks. Credit sco...
+2026-06-24 21:59:21 | INFO     |   [OK] DOS-074 → Compliant (0 findings) [1.63s]
+2026-06-24 21:59:21 | INFO     | 
+[075/100] Processing dossier_075
+2026-06-24 21:59:21 | INFO     |   [PDF] Loading: data/dossier_075/credit_bureau.pdf
+2026-06-24 21:59:21 | INFO     |   [PDF] Extracted 1 page(s), 849 characters
+2026-06-24 21:59:21 | INFO     |   [JSON] Loading: data/dossier_075/client_profile.json
+2026-06-24 21:59:21 | INFO     |   [JSON] Profile loaded: Rodolfo Marcos Acevedo | Declared income: $3,939.65/mo
+2026-06-24 21:59:21 | INFO     |   [CSV] Loading: data/dossier_075/transactions.csv
+2026-06-24 21:59:21 | INFO     |   [CSV] 156 transactions | Avg payroll deposit: $3,997.21/mo
+2026-06-24 21:59:21 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-075
+2026-06-24 21:59:23 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Rodolfo Marcos Acevedo (DOS-075) passes all compliance checks. Credit sco...
+2026-06-24 21:59:23 | INFO     |   [OK] DOS-075 → Compliant (0 findings) [1.85s]
+2026-06-24 21:59:23 | INFO     | 
+[076/100] Processing dossier_076
+2026-06-24 21:59:23 | INFO     |   [PDF] Loading: data/dossier_076/credit_bureau.pdf
+2026-06-24 21:59:23 | INFO     |   [PDF] Extracted 1 page(s), 491 characters
+2026-06-24 21:59:23 | INFO     |   [JSON] Loading: data/dossier_076/client_profile.json
+2026-06-24 21:59:23 | INFO     |   [JSON] Profile loaded: Ramón Sotelo Rascón | Declared income: $4,508.96/mo
+2026-06-24 21:59:23 | INFO     |   [CSV] Loading: data/dossier_076/transactions.csv
+2026-06-24 21:59:23 | INFO     |   [CSV] 141 transactions | Avg payroll deposit: $3,279.47/mo
+2026-06-24 21:59:23 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-076
+2026-06-24 21:59:25 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Ramón Sotelo Rascón (DOS-076) flagged for two violations: (1) Income disc...
+2026-06-24 21:59:25 | INFO     |   [OK] DOS-076 → Non-Compliant (2 findings) [1.71s]
+2026-06-24 21:59:25 | INFO     | 
+[077/100] Processing dossier_077
+2026-06-24 21:59:25 | INFO     |   [PDF] Loading: data/dossier_077/credit_bureau.pdf
+2026-06-24 21:59:25 | INFO     |   [PDF] Extracted 1 page(s), 587 characters
+2026-06-24 21:59:25 | INFO     |   [JSON] Loading: data/dossier_077/client_profile.json
+2026-06-24 21:59:25 | INFO     |   [JSON] Profile loaded: Judith María Luisa Navarro Burgos | Declared income: $6,770.06/mo
+2026-06-24 21:59:25 | INFO     |   [CSV] Loading: data/dossier_077/transactions.csv
+2026-06-24 21:59:25 | INFO     |   [CSV] 142 transactions | Avg payroll deposit: $7,150.41/mo
+2026-06-24 21:59:25 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-077
+2026-06-24 21:59:27 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Client Judith María Luisa Navarro Burgos (DOS-077) shows one compliance violatio...
+2026-06-24 21:59:27 | INFO     |   [OK] DOS-077 → Non-Compliant (1 findings) [2.04s]
+2026-06-24 21:59:27 | INFO     | 
+[078/100] Processing dossier_078
+2026-06-24 21:59:27 | INFO     |   [PDF] Loading: data/dossier_078/credit_bureau.pdf
+2026-06-24 21:59:27 | INFO     |   [PDF] Extracted 1 page(s), 570 characters
+2026-06-24 21:59:27 | INFO     |   [JSON] Loading: data/dossier_078/client_profile.json
+2026-06-24 21:59:27 | INFO     |   [JSON] Profile loaded: Hilda Florencia Tirado Arroyo | Declared income: $4,805.58/mo
+2026-06-24 21:59:27 | INFO     |   [CSV] Loading: data/dossier_078/transactions.csv
+2026-06-24 21:59:27 | INFO     |   [CSV] 151 transactions | Avg payroll deposit: $3,764.51/mo
+2026-06-24 21:59:27 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-078
+2026-06-24 21:59:29 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Hilda Florencia Tirado Arroyo fails compliance on two critical violations...
+2026-06-24 21:59:29 | INFO     |   [OK] DOS-078 → Non-Compliant (2 findings) [1.93s]
+2026-06-24 21:59:29 | INFO     | 
+[079/100] Processing dossier_079
+2026-06-24 21:59:29 | INFO     |   [PDF] Loading: data/dossier_079/credit_bureau.pdf
+2026-06-24 21:59:29 | INFO     |   [PDF] Extracted 1 page(s), 577 characters
+2026-06-24 21:59:29 | INFO     |   [JSON] Loading: data/dossier_079/client_profile.json
+2026-06-24 21:59:29 | INFO     |   [JSON] Profile loaded: Rocío Esmeralda Baca Cortez | Declared income: $10,120.24/mo
+2026-06-24 21:59:29 | INFO     |   [CSV] Loading: data/dossier_079/transactions.csv
+2026-06-24 21:59:29 | INFO     |   [CSV] 165 transactions | Avg payroll deposit: $9,550.04/mo
+2026-06-24 21:59:29 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-079
+2026-06-24 21:59:34 | WARNING  |   [SCHEMA] executive_summary truncated from 536 to 496 characters
+2026-06-24 21:59:34 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Client Rocío Esmeralda Baca Cortez (DOS-079) shows one compliance violation: dec...
+2026-06-24 21:59:34 | INFO     |   [OK] DOS-079 → Non-Compliant (1 findings) [4.93s]
+2026-06-24 21:59:34 | INFO     | 
+[080/100] Processing dossier_080
+2026-06-24 21:59:34 | INFO     |   [PDF] Loading: data/dossier_080/credit_bureau.pdf
+2026-06-24 21:59:34 | INFO     |   [PDF] Extracted 1 page(s), 841 characters
+2026-06-24 21:59:34 | INFO     |   [JSON] Loading: data/dossier_080/client_profile.json
+2026-06-24 21:59:34 | INFO     |   [JSON] Profile loaded: Teodoro Griego Leyva | Declared income: $7,690.86/mo
+2026-06-24 21:59:34 | INFO     |   [CSV] Loading: data/dossier_080/transactions.csv
+2026-06-24 21:59:34 | INFO     |   [CSV] 152 transactions | Avg payroll deposit: $7,251.20/mo
+2026-06-24 21:59:34 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-080
+2026-06-24 21:59:36 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Client Teodoro Griego Leyva (DOS-080) declared monthly income of $7,690.86 but a...
+2026-06-24 21:59:36 | INFO     |   [OK] DOS-080 → Non-Compliant (1 findings) [2.43s]
+2026-06-24 21:59:36 | INFO     | 
+[081/100] Processing dossier_081
+2026-06-24 21:59:36 | INFO     |   [PDF] Loading: data/dossier_081/credit_bureau.pdf
+2026-06-24 21:59:36 | INFO     |   [PDF] Extracted 1 page(s), 766 characters
+2026-06-24 21:59:36 | INFO     |   [JSON] Loading: data/dossier_081/client_profile.json
+2026-06-24 21:59:36 | INFO     |   [JSON] Profile loaded: Yolanda Esther Véliz | Declared income: $6,759.79/mo
+2026-06-24 21:59:36 | INFO     |   [CSV] Loading: data/dossier_081/transactions.csv
+2026-06-24 21:59:36 | INFO     |   [CSV] 153 transactions | Avg payroll deposit: $6,893.82/mo
+2026-06-24 21:59:36 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-081
+2026-06-24 21:59:40 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Yolanda Esther Véliz (DOS-081) passes all primary compliance checks. Cred...
+2026-06-24 21:59:40 | INFO     |   [OK] DOS-081 → Compliant (0 findings) [4.06s]
+2026-06-24 21:59:40 | INFO     | 
+[082/100] Processing dossier_082
+2026-06-24 21:59:40 | INFO     |   [PDF] Loading: data/dossier_082/credit_bureau.pdf
+2026-06-24 21:59:40 | INFO     |   [PDF] Extracted 1 page(s), 593 characters
+2026-06-24 21:59:40 | INFO     |   [JSON] Loading: data/dossier_082/client_profile.json
+2026-06-24 21:59:40 | INFO     |   [JSON] Profile loaded: Sr. Gilberto Sosa | Declared income: $16,799.25/mo
+2026-06-24 21:59:40 | INFO     |   [CSV] Loading: data/dossier_082/transactions.csv
+2026-06-24 21:59:40 | INFO     |   [CSV] 147 transactions | Avg payroll deposit: $11,065.05/mo
+2026-06-24 21:59:40 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-082
+2026-06-24 21:59:42 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Gilberto Sosa (DOS-082) fails compliance due to two critical violations: ...
+2026-06-24 21:59:42 | INFO     |   [OK] DOS-082 → Non-Compliant (2 findings) [1.86s]
+2026-06-24 21:59:42 | INFO     | 
+[083/100] Processing dossier_083
+2026-06-24 21:59:42 | INFO     |   [PDF] Loading: data/dossier_083/credit_bureau.pdf
+2026-06-24 21:59:42 | INFO     |   [PDF] Extracted 1 page(s), 581 characters
+2026-06-24 21:59:42 | INFO     |   [JSON] Loading: data/dossier_083/client_profile.json
+2026-06-24 21:59:42 | INFO     |   [JSON] Profile loaded: Sra. Marisol Jaramillo | Declared income: $6,827.60/mo
+2026-06-24 21:59:42 | INFO     |   [CSV] Loading: data/dossier_083/transactions.csv
+2026-06-24 21:59:42 | INFO     |   [CSV] 141 transactions | Avg payroll deposit: $6,678.70/mo
+2026-06-24 21:59:42 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-083
+2026-06-24 21:59:44 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Sra. Marisol Jaramillo (DOS-083) passes all compliance checks. Credit score of 6...
+2026-06-24 21:59:44 | INFO     |   [OK] DOS-083 → Compliant (0 findings) [1.57s]
+2026-06-24 21:59:44 | INFO     | 
+[084/100] Processing dossier_084
+2026-06-24 21:59:44 | INFO     |   [PDF] Loading: data/dossier_084/credit_bureau.pdf
+2026-06-24 21:59:44 | INFO     |   [PDF] Extracted 1 page(s), 498 characters
+2026-06-24 21:59:44 | INFO     |   [JSON] Loading: data/dossier_084/client_profile.json
+2026-06-24 21:59:44 | INFO     |   [JSON] Profile loaded: Natividad Angulo Canales | Declared income: $4,688.44/mo
+2026-06-24 21:59:44 | INFO     |   [CSV] Loading: data/dossier_084/transactions.csv
+2026-06-24 21:59:44 | INFO     |   [CSV] 162 transactions | Avg payroll deposit: $5,043.22/mo
+2026-06-24 21:59:44 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-084
+2026-06-24 21:59:46 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Client Natividad Angulo Canales presents one compliance violation: declared mont...
+2026-06-24 21:59:46 | INFO     |   [OK] DOS-084 → Non-Compliant (1 findings) [2.3s]
+2026-06-24 21:59:46 | INFO     | 
+[085/100] Processing dossier_085
+2026-06-24 21:59:46 | INFO     |   [PDF] Loading: data/dossier_085/credit_bureau.pdf
+2026-06-24 21:59:46 | INFO     |   [PDF] Extracted 1 page(s), 815 characters
+2026-06-24 21:59:46 | INFO     |   [JSON] Loading: data/dossier_085/client_profile.json
+2026-06-24 21:59:46 | INFO     |   [JSON] Profile loaded: Julia Duarte | Declared income: $15,981.54/mo
+2026-06-24 21:59:46 | INFO     |   [CSV] Loading: data/dossier_085/transactions.csv
+2026-06-24 21:59:46 | INFO     |   [CSV] 148 transactions | Avg payroll deposit: $11,100.97/mo
+2026-06-24 21:59:46 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-085
+2026-06-24 21:59:48 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Julia Duarte (DOS-085) flagged for two violations: (1) Income discrepancy...
+2026-06-24 21:59:48 | INFO     |   [OK] DOS-085 → Non-Compliant (2 findings) [2.41s]
+2026-06-24 21:59:48 | INFO     | 
+[086/100] Processing dossier_086
+2026-06-24 21:59:48 | INFO     |   [PDF] Loading: data/dossier_086/credit_bureau.pdf
+2026-06-24 21:59:48 | INFO     |   [PDF] Extracted 1 page(s), 700 characters
+2026-06-24 21:59:48 | INFO     |   [JSON] Loading: data/dossier_086/client_profile.json
+2026-06-24 21:59:48 | INFO     |   [JSON] Profile loaded: Srita. Miriam Mascareñas | Declared income: $11,559.09/mo
+2026-06-24 21:59:48 | INFO     |   [CSV] Loading: data/dossier_086/transactions.csv
+2026-06-24 21:59:48 | INFO     |   [CSV] 138 transactions | Avg payroll deposit: $10,955.69/mo
+2026-06-24 21:59:48 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-086
+2026-06-24 21:59:50 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Srita. Miriam Mascareñas (DOS-086) passes all compliance checks. Credit s...
+2026-06-24 21:59:50 | INFO     |   [OK] DOS-086 → Compliant (0 findings) [1.88s]
+2026-06-24 21:59:50 | INFO     | 
+[087/100] Processing dossier_087
+2026-06-24 21:59:50 | INFO     |   [PDF] Loading: data/dossier_087/credit_bureau.pdf
+2026-06-24 21:59:50 | INFO     |   [PDF] Extracted 1 page(s), 590 characters
+2026-06-24 21:59:50 | INFO     |   [JSON] Loading: data/dossier_087/client_profile.json
+2026-06-24 21:59:50 | INFO     |   [JSON] Profile loaded: Horacio Abelardo Zepeda Calvillo | Declared income: $12,253.00/mo
+2026-06-24 21:59:50 | INFO     |   [CSV] Loading: data/dossier_087/transactions.csv
+2026-06-24 21:59:50 | INFO     |   [CSV] 146 transactions | Avg payroll deposit: $9,720.15/mo
+2026-06-24 21:59:50 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-087
+2026-06-24 21:59:52 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Horacio Abelardo Zepeda Calvillo (DOS-087) flagged for two violations: (1...
+2026-06-24 21:59:52 | INFO     |   [OK] DOS-087 → Non-Compliant (2 findings) [2.14s]
+2026-06-24 21:59:52 | INFO     | 
+[088/100] Processing dossier_088
+2026-06-24 21:59:52 | INFO     |   [PDF] Loading: data/dossier_088/credit_bureau.pdf
+2026-06-24 21:59:52 | INFO     |   [PDF] Extracted 1 page(s), 576 characters
+2026-06-24 21:59:52 | INFO     |   [JSON] Loading: data/dossier_088/client_profile.json
+2026-06-24 21:59:52 | INFO     |   [JSON] Profile loaded: Samuel Valencia | Declared income: $2,644.95/mo
+2026-06-24 21:59:52 | INFO     |   [CSV] Loading: data/dossier_088/transactions.csv
+2026-06-24 21:59:52 | INFO     |   [CSV] 131 transactions | Avg payroll deposit: $2,593.80/mo
+2026-06-24 21:59:52 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-088
+2026-06-24 21:59:55 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Samuel Valencia (DOS-088) passes all compliance checks. Credit score of 667 is a...
+2026-06-24 21:59:55 | INFO     |   [OK] DOS-088 → Compliant (0 findings) [2.45s]
+2026-06-24 21:59:55 | INFO     | 
+[089/100] Processing dossier_089
+2026-06-24 21:59:55 | INFO     |   [PDF] Loading: data/dossier_089/credit_bureau.pdf
+2026-06-24 21:59:55 | INFO     |   [PDF] Extracted 1 page(s), 846 characters
+2026-06-24 21:59:55 | INFO     |   [JSON] Loading: data/dossier_089/client_profile.json
+2026-06-24 21:59:55 | INFO     |   [JSON] Profile loaded: María José Elisa Cadena Berríos | Declared income: $8,101.32/mo
+2026-06-24 21:59:55 | INFO     |   [CSV] Loading: data/dossier_089/transactions.csv
+2026-06-24 21:59:55 | INFO     |   [CSV] 153 transactions | Avg payroll deposit: $6,091.53/mo
+2026-06-24 21:59:55 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-089
+2026-06-24 21:59:57 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 3 | Summary: Client María José Elisa Cadena Berríos (DOS-089) fails three compliance rules: (...
+2026-06-24 21:59:57 | INFO     |   [OK] DOS-089 → Non-Compliant (3 findings) [2.24s]
+2026-06-24 21:59:57 | INFO     | 
+[090/100] Processing dossier_090
+2026-06-24 21:59:57 | INFO     |   [PDF] Loading: data/dossier_090/credit_bureau.pdf
+2026-06-24 21:59:57 | INFO     |   [PDF] Extracted 1 page(s), 751 characters
+2026-06-24 21:59:57 | INFO     |   [JSON] Loading: data/dossier_090/client_profile.json
+2026-06-24 21:59:57 | INFO     |   [JSON] Profile loaded: Natalia Rivero Cisneros | Declared income: $10,730.37/mo
+2026-06-24 21:59:57 | INFO     |   [CSV] Loading: data/dossier_090/transactions.csv
+2026-06-24 21:59:57 | INFO     |   [CSV] 142 transactions | Avg payroll deposit: $7,428.50/mo
+2026-06-24 21:59:57 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-090
+2026-06-24 21:59:59 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Client Natalia Rivero Cisneros declares monthly income of $10,730.37 but actual ...
+2026-06-24 21:59:59 | INFO     |   [OK] DOS-090 → Non-Compliant (1 findings) [1.43s]
+2026-06-24 21:59:59 | INFO     | 
+[091/100] Processing dossier_091
+2026-06-24 21:59:59 | INFO     |   [PDF] Loading: data/dossier_091/credit_bureau.pdf
+2026-06-24 21:59:59 | INFO     |   [PDF] Extracted 1 page(s), 489 characters
+2026-06-24 21:59:59 | INFO     |   [JSON] Loading: data/dossier_091/client_profile.json
+2026-06-24 21:59:59 | INFO     |   [JSON] Profile loaded: Patricio Renato Mercado | Declared income: $4,997.28/mo
+2026-06-24 21:59:59 | INFO     |   [CSV] Loading: data/dossier_091/transactions.csv
+2026-06-24 21:59:59 | INFO     |   [CSV] 141 transactions | Avg payroll deposit: $4,843.32/mo
+2026-06-24 21:59:59 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-091
+2026-06-24 22:00:00 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client DOS-091 (Patricio Renato Mercado) passes all compliance checks. Credit sc...
+2026-06-24 22:00:00 | INFO     |   [OK] DOS-091 → Compliant (0 findings) [1.93s]
+2026-06-24 22:00:00 | INFO     | 
+[092/100] Processing dossier_092
+2026-06-24 22:00:00 | INFO     |   [PDF] Loading: data/dossier_092/credit_bureau.pdf
+2026-06-24 22:00:00 | INFO     |   [PDF] Extracted 1 page(s), 587 characters
+2026-06-24 22:00:00 | INFO     |   [JSON] Loading: data/dossier_092/client_profile.json
+2026-06-24 22:00:00 | INFO     |   [JSON] Profile loaded: Eduardo Clemente Aguilar | Declared income: $6,422.62/mo
+2026-06-24 22:00:00 | INFO     |   [CSV] Loading: data/dossier_092/transactions.csv
+2026-06-24 22:00:00 | INFO     |   [CSV] 161 transactions | Avg payroll deposit: $6,151.93/mo
+2026-06-24 22:00:00 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-092
+2026-06-24 22:00:02 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Eduardo Clemente Aguilar (DOS-092) passes all compliance checks. Credit score of...
+2026-06-24 22:00:02 | INFO     |   [OK] DOS-092 → Compliant (0 findings) [1.84s]
+2026-06-24 22:00:02 | INFO     | 
+[093/100] Processing dossier_093
+2026-06-24 22:00:02 | INFO     |   [PDF] Loading: data/dossier_093/credit_bureau.pdf
+2026-06-24 22:00:02 | INFO     |   [PDF] Extracted 1 page(s), 685 characters
+2026-06-24 22:00:02 | INFO     |   [JSON] Loading: data/dossier_093/client_profile.json
+2026-06-24 22:00:02 | INFO     |   [JSON] Profile loaded: Ana María Castellanos | Declared income: $11,067.82/mo
+2026-06-24 22:00:02 | INFO     |   [CSV] Loading: data/dossier_093/transactions.csv
+2026-06-24 22:00:02 | INFO     |   [CSV] 143 transactions | Avg payroll deposit: $10,387.19/mo
+2026-06-24 22:00:02 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-093
+2026-06-24 22:00:04 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 1 | Summary: Client Ana María Castellanos (DOS-093) declares monthly income of $11,067.82 but...
+2026-06-24 22:00:04 | INFO     |   [OK] DOS-093 → Non-Compliant (1 findings) [1.99s]
+2026-06-24 22:00:04 | INFO     | 
+[094/100] Processing dossier_094
+2026-06-24 22:00:04 | INFO     |   [PDF] Loading: data/dossier_094/credit_bureau.pdf
+2026-06-24 22:00:04 | INFO     |   [PDF] Extracted 1 page(s), 478 characters
+2026-06-24 22:00:04 | INFO     |   [JSON] Loading: data/dossier_094/client_profile.json
+2026-06-24 22:00:04 | INFO     |   [JSON] Profile loaded: Renato Jiménez | Declared income: $11,185.05/mo
+2026-06-24 22:00:04 | INFO     |   [CSV] Loading: data/dossier_094/transactions.csv
+2026-06-24 22:00:04 | INFO     |   [CSV] 157 transactions | Avg payroll deposit: $8,743.11/mo
+2026-06-24 22:00:04 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-094
+2026-06-24 22:00:06 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Renato Jiménez (DOS-094) fails compliance due to two critical violations:...
+2026-06-24 22:00:06 | INFO     |   [OK] DOS-094 → Non-Compliant (2 findings) [1.58s]
+2026-06-24 22:00:06 | INFO     | 
+[095/100] Processing dossier_095
+2026-06-24 22:00:06 | INFO     |   [PDF] Loading: data/dossier_095/credit_bureau.pdf
+2026-06-24 22:00:06 | INFO     |   [PDF] Extracted 1 page(s), 748 characters
+2026-06-24 22:00:06 | INFO     |   [JSON] Loading: data/dossier_095/client_profile.json
+2026-06-24 22:00:06 | INFO     |   [JSON] Profile loaded: Ing. María Eugenia Torres | Declared income: $12,764.79/mo
+2026-06-24 22:00:06 | INFO     |   [CSV] Loading: data/dossier_095/transactions.csv
+2026-06-24 22:00:06 | INFO     |   [CSV] 136 transactions | Avg payroll deposit: $8,232.63/mo
+2026-06-24 22:00:06 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-095
+2026-06-24 22:00:08 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client María Eugenia Torres (DOS-095) flagged for two violations: (1) Income dis...
+2026-06-24 22:00:08 | INFO     |   [OK] DOS-095 → Non-Compliant (2 findings) [1.87s]
+2026-06-24 22:00:08 | INFO     | 
+[096/100] Processing dossier_096
+2026-06-24 22:00:08 | INFO     |   [PDF] Loading: data/dossier_096/credit_bureau.pdf
+2026-06-24 22:00:08 | INFO     |   [PDF] Extracted 1 page(s), 672 characters
+2026-06-24 22:00:08 | INFO     |   [JSON] Loading: data/dossier_096/client_profile.json
+2026-06-24 22:00:08 | INFO     |   [JSON] Profile loaded: Angélica Sofía Urías Olmos | Declared income: $8,988.88/mo
+2026-06-24 22:00:08 | INFO     |   [CSV] Loading: data/dossier_096/transactions.csv
+2026-06-24 22:00:08 | INFO     |   [CSV] 158 transactions | Avg payroll deposit: $6,845.91/mo
+2026-06-24 22:00:08 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-096
+2026-06-24 22:00:10 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Angélica Sofía Urías Olmos fails two critical compliance checks: (1) Cred...
+2026-06-24 22:00:10 | INFO     |   [OK] DOS-096 → Non-Compliant (2 findings) [1.9s]
+2026-06-24 22:00:10 | INFO     | 
+[097/100] Processing dossier_097
+2026-06-24 22:00:10 | INFO     |   [PDF] Loading: data/dossier_097/credit_bureau.pdf
+2026-06-24 22:00:10 | INFO     |   [PDF] Extracted 1 page(s), 698 characters
+2026-06-24 22:00:10 | INFO     |   [JSON] Loading: data/dossier_097/client_profile.json
+2026-06-24 22:00:10 | INFO     |   [JSON] Profile loaded: Srita. Andrea Tejeda | Declared income: $9,976.52/mo
+2026-06-24 22:00:10 | INFO     |   [CSV] Loading: data/dossier_097/transactions.csv
+2026-06-24 22:00:10 | INFO     |   [CSV] 158 transactions | Avg payroll deposit: $10,137.97/mo
+2026-06-24 22:00:10 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-097
+2026-06-24 22:00:12 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Srita. Andrea Tejeda (DOS-097) passes all compliance checks. Credit score...
+2026-06-24 22:00:12 | INFO     |   [OK] DOS-097 → Compliant (0 findings) [1.93s]
+2026-06-24 22:00:12 | INFO     | 
+[098/100] Processing dossier_098
+2026-06-24 22:00:12 | INFO     |   [PDF] Loading: data/dossier_098/credit_bureau.pdf
+2026-06-24 22:00:12 | INFO     |   [PDF] Extracted 1 page(s), 698 characters
+2026-06-24 22:00:12 | INFO     |   [JSON] Loading: data/dossier_098/client_profile.json
+2026-06-24 22:00:12 | INFO     |   [JSON] Profile loaded: Araceli Salas Bahena | Declared income: $8,424.22/mo
+2026-06-24 22:00:12 | INFO     |   [CSV] Loading: data/dossier_098/transactions.csv
+2026-06-24 22:00:12 | INFO     |   [CSV] 161 transactions | Avg payroll deposit: $6,189.06/mo
+2026-06-24 22:00:12 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-098
+2026-06-24 22:00:14 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 3 | Summary: Client Araceli Salas Bahena fails three compliance checks: (1) Credit score of 5...
+2026-06-24 22:00:14 | INFO     |   [OK] DOS-098 → Non-Compliant (3 findings) [2.14s]
+2026-06-24 22:00:14 | INFO     | 
+[099/100] Processing dossier_099
+2026-06-24 22:00:14 | INFO     |   [PDF] Loading: data/dossier_099/credit_bureau.pdf
+2026-06-24 22:00:14 | INFO     |   [PDF] Extracted 1 page(s), 585 characters
+2026-06-24 22:00:14 | INFO     |   [JSON] Loading: data/dossier_099/client_profile.json
+2026-06-24 22:00:14 | INFO     |   [JSON] Profile loaded: Eva Cervantes | Declared income: $4,363.21/mo
+2026-06-24 22:00:14 | INFO     |   [CSV] Loading: data/dossier_099/transactions.csv
+2026-06-24 22:00:14 | INFO     |   [CSV] 155 transactions | Avg payroll deposit: $4,276.94/mo
+2026-06-24 22:00:14 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-099
+2026-06-24 22:00:16 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Eva Cervantes (DOS-099) passes all compliance checks. Credit score of 724 is acc...
+2026-06-24 22:00:16 | INFO     |   [OK] DOS-099 → Compliant (0 findings) [2.48s]
+2026-06-24 22:00:16 | INFO     | 
+[100/100] Processing dossier_100
+2026-06-24 22:00:16 | INFO     |   [PDF] Loading: data/dossier_100/credit_bureau.pdf
+2026-06-24 22:00:16 | INFO     |   [PDF] Extracted 1 page(s), 745 characters
+2026-06-24 22:00:16 | INFO     |   [JSON] Loading: data/dossier_100/client_profile.json
+2026-06-24 22:00:16 | INFO     |   [JSON] Profile loaded: Amalia Portillo | Declared income: $3,569.89/mo
+2026-06-24 22:00:16 | INFO     |   [CSV] Loading: data/dossier_100/transactions.csv
+2026-06-24 22:00:16 | INFO     |   [CSV] 152 transactions | Avg payroll deposit: $3,578.71/mo
+2026-06-24 22:00:16 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-100
+2026-06-24 22:00:18 | INFO     |   [CHAIN] Resultado → Status: Compliant | Findings: 0 | Summary: Client Amalia Portillo (DOS-100) passes all compliance checks. Declared monthly ...
+2026-06-24 22:00:18 | INFO     |   [OK] DOS-100 → Compliant (0 findings) [1.5s]
+2026-06-24 22:00:18 | INFO     | 
+============================================================
+2026-06-24 22:00:18 | INFO     | AUDIT COMPLETE
+2026-06-24 22:00:18 | INFO     |   Total processed  : 100
+2026-06-24 22:00:18 | INFO     |   Compliant        : 53
+2026-06-24 22:00:18 | INFO     |   Non-Compliant    : 47
+2026-06-24 22:00:18 | INFO     |   Errors           : 0
+2026-06-24 22:00:18 | INFO     |   Report saved to  : output/audit_report.json
+2026-06-24 22:00:18 | INFO     |   Log saved to     : output/langchain_demo.log
+2026-06-24 22:00:18 | INFO     | ============================================================
