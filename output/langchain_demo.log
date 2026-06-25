@@ -6,3 +6,19 @@
 2026-06-22 23:58:30 | INFO     |   [CSV] 148 transacciones | Depósito promedio nómina: $9,613.12/mes
 2026-06-22 23:58:30 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-001
 2026-06-22 23:58:31 | ERROR    |   [CHAIN] Error en auditoría de DOS-001: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CcKXBVdz7oYTbVDNKTLoP'}
+2026-06-24 21:01:42 | INFO     |   [PDF] Cargando: data/dossier_001/credit_bureau.pdf
+2026-06-24 21:01:42 | INFO     |   [PDF] Extraídas 1 página(s), 749 caracteres
+2026-06-24 21:01:42 | INFO     |   [JSON] Cargando: data/dossier_001/client_profile.json
+2026-06-24 21:01:42 | INFO     |   [JSON] Perfil cargado: Jaime Jaime | Ingreso declarado: $12,678.37/mes
+2026-06-24 21:01:42 | INFO     |   [CSV] Cargando: data/dossier_001/transactions.csv
+2026-06-24 21:01:42 | INFO     |   [CSV] 148 transacciones | Depósito promedio nómina: $9,613.12/mes
+2026-06-24 21:01:42 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-001
+2026-06-24 21:01:44 | ERROR    |   [CHAIN] Error en auditoría de DOS-001: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CcP5KTXSuhnXJkNDR17yW'}
+2026-06-24 21:13:28 | INFO     |   [PDF] Cargando: data/dossier_001/credit_bureau.pdf
+2026-06-24 21:13:28 | INFO     |   [PDF] Extraídas 1 página(s), 749 caracteres
+2026-06-24 21:13:28 | INFO     |   [JSON] Cargando: data/dossier_001/client_profile.json
+2026-06-24 21:13:28 | INFO     |   [JSON] Perfil cargado: Jaime Jaime | Ingreso declarado: $12,678.37/mes
+2026-06-24 21:13:28 | INFO     |   [CSV] Cargando: data/dossier_001/transactions.csv
+2026-06-24 21:13:28 | INFO     |   [CSV] 148 transacciones | Depósito promedio nómina: $9,613.12/mes
+2026-06-24 21:13:28 | INFO     |   [CHAIN] Iniciando auditoría LLM para DOS-001
+2026-06-24 21:13:30 | INFO     |   [CHAIN] Resultado → Status: Non-Compliant | Findings: 2 | Summary: Client Jaime Jaime (DOS-001) flagged for two critical violations: (1) Income dis...

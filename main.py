@@ -1,8 +1,14 @@
 """
-main.py
-Entry point del FinTech Compliance Auditor.
-Orquesta la carga de los 100 dossiers, el pipeline LCEL,
-y genera el reporte final en output/audit_report.json
+main.py — Entry point for the FinTech Compliance Auditor.
+
+Orchestrates the full batch pipeline:
+  1. Discovers all dossier directories under data/
+  2. Loads each dossier's three source files (PDF, JSON, CSV) via loaders.py
+  3. Invokes the LCEL audit chain (LLM + Pydantic parser) via chain.py
+  4. Aggregates results into output/audit_report.json
+  5. Writes a timestamped execution log to output/langchain_demo.log
+
+Expected runtime: ~2–4 seconds per dossier (one LLM call each).
 """
 
 import os
@@ -16,13 +22,19 @@ from src.logger import get_logger
 load_dotenv()
 logger = get_logger()
 
-DATA_DIR   = "data"
-OUTPUT_DIR = "output"
+# Paths — relative to the project root
+DATA_DIR    = "data"
+OUTPUT_DIR  = "output"
 REPORT_PATH = os.path.join(OUTPUT_DIR, "audit_report.json")
 
 
 def get_dossier_dirs() -> list[str]:
-    """Retorna la lista ordenada de carpetas de dossiers."""
+    """
+    Return a sorted list of dossier directory paths found under DATA_DIR.
+
+    Only directories whose names start with 'dossier_' are included,
+    which excludes ground_truth.json and any other top-level files.
+    """
     dirs = []
     for name in sorted(os.listdir(DATA_DIR)):
         full_path = os.path.join(DATA_DIR, name)
@@ -32,6 +44,15 @@ def get_dossier_dirs() -> list[str]:
 
 
 def main():
+    """
+    Run the full compliance audit across all dossiers.
+
+    For each dossier the pipeline is:
+      load_dossier() → run_audit() → append to results or errors list
+
+    A final JSON report is written to REPORT_PATH regardless of individual
+    dossier failures — failed dossiers are tracked in 'failed_dossiers'.
+    """
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     logger.info("=" * 60)
@@ -39,20 +60,21 @@ def main():
     logger.info("=" * 60)
 
     dossier_dirs = get_dossier_dirs()
-    logger.info(f"Dossiers encontrados: {len(dossier_dirs)}")
+    total = len(dossier_dirs)
+    logger.info(f"Dossiers found: {total}")
 
-    results = []
-    errors  = []
+    results: list[dict] = []  # Successfully audited dossiers
+    errors:  list[str]  = []  # Dossier IDs that could not be processed
 
     for idx, dossier_path in enumerate(dossier_dirs, start=1):
         dossier_name = os.path.basename(dossier_path)
-        logger.info(f"\n[{idx:03d}/{len(dossier_dirs)}] Procesando {dossier_name}")
+        logger.info(f"\n[{idx:03d}/{total}] Processing {dossier_name}")
 
-        # 1. Cargar los 3 archivos
+        # Step 1 — Load the three source files (PDF + JSON + CSV)
         dossier_data = load_dossier(dossier_path)
         dossier_id   = dossier_data.get("client_profile", {}).get("dossier_id", dossier_name)
 
-        # 2. Ejecutar el pipeline LCEL
+        # Step 2 — Run the LCEL pipeline (prompt → LLM → Pydantic parser)
         start = time.time()
         audit_result = run_audit(dossier_data, dossier_id)
         elapsed = round(time.time() - start, 2)
@@ -66,13 +88,16 @@ def main():
                 "processing_time_s": elapsed,
             }
             results.append(record)
-            logger.info(f"  [OK] {dossier_id} → {audit_result.compliance_status} "
-                        f"({audit_result.findings_count} findings) [{elapsed}s]")
+            logger.info(
+                f"  [OK] {dossier_id} → {audit_result.compliance_status} "
+                f"({audit_result.findings_count} findings) [{elapsed}s]"
+            )
         else:
+            # run_audit() returns None on LLM or parsing failure; see chain.py
             errors.append(dossier_id)
-            logger.error(f"  [FAIL] {dossier_id} → No se pudo auditar")
+            logger.error(f"  [FAIL] {dossier_id} → Could not be audited (see log above)")
 
-    # 3. Guardar reporte final
+    # Step 3 — Build and persist the final report
     report = {
         "total_processed": len(results),
         "total_errors":    len(errors),
@@ -85,15 +110,15 @@ def main():
     with open(REPORT_PATH, "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2, ensure_ascii=False)
 
-    # 4. Resumen final
+    # Step 4 — Print final summary to console and log file
     logger.info("\n" + "=" * 60)
-    logger.info("AUDITORÍA COMPLETADA")
-    logger.info(f"  Total procesados : {report['total_processed']}")
+    logger.info("AUDIT COMPLETE")
+    logger.info(f"  Total processed  : {report['total_processed']}")
     logger.info(f"  Compliant        : {report['compliant']}")
     logger.info(f"  Non-Compliant    : {report['non_compliant']}")
-    logger.info(f"  Errores          : {report['total_errors']}")
-    logger.info(f"  Reporte guardado : {REPORT_PATH}")
-    logger.info(f"  Log guardado     : output/langchain_demo.log")
+    logger.info(f"  Errors           : {report['total_errors']}")
+    logger.info(f"  Report saved to  : {REPORT_PATH}")
+    logger.info(f"  Log saved to     : output/langchain_demo.log")
     logger.info("=" * 60)
 
 

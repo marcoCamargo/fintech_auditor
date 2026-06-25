@@ -1,10 +1,28 @@
 """
-generate_data.py
-Genera 100 dossiers sintéticos para el proyecto FinTech Compliance Auditor.
-Cada dossier contiene:
-  - credit_bureau.pdf   : historial crediticio
-  - client_profile.json : perfil declarado por el cliente
-  - transactions.csv    : transacciones bancarias reales
+generate_data.py — Synthetic dossier generator for the FinTech Compliance Auditor.
+
+Run this script once to populate the data/ directory with 100 client dossiers.
+Each dossier is a subdirectory (data/dossier_001/ … data/dossier_100/) containing:
+  - credit_bureau.pdf    : credit bureau report with score, account history, and inquiries
+  - client_profile.json  : self-declared client data (income, employment, loan purpose)
+  - transactions.csv     : 12 months of synthetic bank transactions (1 payroll + 8-15 debits/month)
+
+Exactly 30 of the 100 dossiers are intentionally Non-Compliant:
+  - Declared income is inflated 25–60% above actual payroll deposits
+  - Credit score is set in the 480–650 range (triggers score and/or inconsistency rules)
+
+The remaining 70 dossiers are Compliant:
+  - Declared income matches actual deposits within ±10%
+  - Credit score is in the 620–850 range
+
+After generation, data/ground_truth.json is written with expected audit results
+so the LLM output can be validated against known labels.
+
+Usage:
+    python generate_data.py
+
+WARNING: Re-running this script overwrites all existing dossiers and resets
+the ground truth. The random seed (42) is fixed so output is reproducible.
 """
 
 import os
@@ -18,17 +36,28 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet
 
 fake = Faker("es_MX")
-random.seed(42)
+random.seed(42)  # Fixed seed — ensures reproducible dossier content across runs
 
 DATA_DIR = "data"
 
 
 def ensure_dirs():
+    """Create the top-level data/ directory if it does not exist."""
     os.makedirs(DATA_DIR, exist_ok=True)
 
 
 def generate_client_profile(dossier_id: int, declared_income: float) -> dict:
-    """Perfil JSON declarado por el cliente."""
+    """
+    Build the client's self-declared profile as a Python dict (saved as JSON).
+
+    Args:
+        dossier_id:       Sequential dossier number (1–100).
+        declared_income:  Monthly income the client claims, in USD. For Non-Compliant
+                          dossiers this is intentionally inflated vs. actual payroll.
+
+    Returns:
+        Dict with personal, employment, and loan request fields.
+    """
     return {
         "dossier_id": f"DOS-{dossier_id:03d}",
         "full_name": fake.name(),
@@ -51,10 +80,23 @@ def generate_client_profile(dossier_id: int, declared_income: float) -> dict:
 
 
 def generate_transactions_csv(dossier_id: int, actual_monthly_income: float, path: str):
-    """CSV con 12 meses de transacciones bancarias."""
+    """
+    Generate 12 months of bank transactions and write them to a CSV file.
+
+    For each month the CSV contains:
+      - One PAYROLL DEPOSIT credit, slightly jittered (±5%) around actual_monthly_income
+        to simulate minor payroll variability. This is the value loaders.py uses to
+        compute avg_monthly_payroll_deposit_usd for income verification.
+      - 8–15 random debit transactions (groceries, rent, utilities, etc.)
+
+    Args:
+        dossier_id:            Sequential dossier number (unused in content, kept for symmetry).
+        actual_monthly_income: True monthly payroll amount in USD (before jitter).
+        path:                  Destination file path for the CSV.
+    """
     rows = []
     for month in range(1, 13):
-        # Depósito de nómina (ingreso real)
+        # One payroll deposit per month — jittered ±5% to simulate real payroll variability
         rows.append({
             "date": f"2024-{month:02d}-05",
             "description": "PAYROLL DEPOSIT",
@@ -62,7 +104,7 @@ def generate_transactions_csv(dossier_id: int, actual_monthly_income: float, pat
             "type": "credit",
             "balance_usd": round(random.uniform(1000, 15000), 2),
         })
-        # Gastos varios
+        # Random everyday expenses for the month
         for _ in range(random.randint(8, 15)):
             rows.append({
                 "date": fake.date_between(
@@ -86,7 +128,21 @@ def generate_transactions_csv(dossier_id: int, actual_monthly_income: float, pat
 
 
 def generate_credit_bureau_pdf(dossier_id: int, profile: dict, credit_score: int, path: str):
-    """PDF con historial crediticio del buró."""
+    """
+    Generate a synthetic credit bureau PDF report using ReportLab.
+
+    Sections included:
+      - Credit score and rating band (Poor / Fair / Good / Excellent)
+      - Credit history: 2–6 accounts with randomized balance and payment status
+      - Inquiries: hard and soft inquiry counts for the last 12 months
+      - Public records: 10% chance of a bankruptcy filing entry
+
+    Args:
+        dossier_id:   Sequential dossier number (used for display only).
+        profile:      Client profile dict (provides name, ID, dossier_id).
+        credit_score: FICO-style score (300–850). Controls the rating label.
+        path:         Destination file path for the PDF.
+    """
     doc = SimpleDocTemplate(path, pagesize=letter)
     styles = getSampleStyleSheet()
     story = []
@@ -103,8 +159,8 @@ def generate_credit_bureau_pdf(dossier_id: int, profile: dict, credit_score: int
     story.append(Paragraph(f"Credit Score: {credit_score} / 850", styles["Normal"]))
     rating = (
         "Excellent" if credit_score >= 750 else
-        "Good" if credit_score >= 670 else
-        "Fair" if credit_score >= 580 else
+        "Good"      if credit_score >= 670 else
+        "Fair"      if credit_score >= 580 else
         "Poor"
     )
     story.append(Paragraph(f"Rating: {rating}", styles["Normal"]))
@@ -113,10 +169,13 @@ def generate_credit_bureau_pdf(dossier_id: int, profile: dict, credit_score: int
     story.append(Paragraph("CREDIT HISTORY", styles["Heading2"]))
     num_accounts = random.randint(2, 6)
     for i in range(num_accounts):
-        status = random.choices(["Current", "Closed", "Late (30 days)", "Late (60 days)"],
-                                weights=[70, 15, 10, 5])[0]
+        status = random.choices(
+            ["Current", "Closed", "Late (30 days)", "Late (60 days)"],
+            weights=[70, 15, 10, 5]
+        )[0]
         story.append(Paragraph(
-            f"Account {i+1}: {fake.company()} — {random.choice(['Credit Card','Auto Loan','Mortgage','Personal Loan'])} "
+            f"Account {i+1}: {fake.company()} — "
+            f"{random.choice(['Credit Card', 'Auto Loan', 'Mortgage', 'Personal Loan'])} "
             f"| Balance: ${random.randint(0, 25000):,} | Status: {status}",
             styles["Normal"]
         ))
@@ -128,7 +187,7 @@ def generate_credit_bureau_pdf(dossier_id: int, profile: dict, credit_score: int
 
     story.append(Spacer(1, 12))
     story.append(Paragraph("PUBLIC RECORDS", styles["Heading2"]))
-    has_record = random.random() < 0.1
+    has_record = random.random() < 0.1  # 10% chance of a bankruptcy entry
     story.append(Paragraph(
         "Bankruptcy filing: YES — Chapter 7, Filed 2021" if has_record
         else "No public records found.",
@@ -139,7 +198,24 @@ def generate_credit_bureau_pdf(dossier_id: int, profile: dict, credit_score: int
 
 
 def is_compliant(declared_income: float, actual_income: float, credit_score: int) -> tuple[bool, list[str]]:
-    """Determina si el dossier es compliant y lista los hallazgos."""
+    """
+    Apply the four compliance rules and return the verdict with a list of findings.
+
+    Rules (mirrors the system prompt in chain.py):
+      1. Income discrepancy > 20% between declared and actual payroll income
+      2. Credit score below 580
+      3. High income claim (> $8,000/mo) paired with poor credit (< 620)
+      (Rule 4 — missing data — cannot occur in generated dossiers.)
+
+    Args:
+        declared_income: Monthly income the client declared (USD).
+        actual_income:   True monthly payroll amount used in the CSV (USD).
+        credit_score:    FICO-style score assigned during generation.
+
+    Returns:
+        Tuple of (is_compliant: bool, findings: list[str]).
+        findings is empty when is_compliant is True.
+    """
     findings = []
     discrepancy_pct = abs(declared_income - actual_income) / actual_income * 100
 
@@ -157,36 +233,42 @@ def is_compliant(declared_income: float, actual_income: float, credit_score: int
 
 
 def main():
+    """
+    Generate all 100 dossiers and write data/ground_truth.json.
+
+    Generation strategy:
+      - 30 dossiers are randomly selected (seeded) to be Non-Compliant.
+        Their declared income is inflated 25–60% and credit score is 480–650.
+      - The remaining 70 are Compliant: income within ±10% and score 620–850.
+    """
     ensure_dirs()
     summary = []
 
-    # 30% de dossiers serán non-compliant intencionalmente
+    # Randomly select 30 dossier IDs to be Non-Compliant (fixed by seed=42)
     non_compliant_ids = set(random.sample(range(1, 101), 30))
 
     for i in range(1, 101):
         dossier_dir = os.path.join(DATA_DIR, f"dossier_{i:03d}")
         os.makedirs(dossier_dir, exist_ok=True)
 
-        # Ingresos declarados vs reales
         base_income = round(random.uniform(2500, 12000), 2)
 
         if i in non_compliant_ids:
-            # Inflar el ingreso declarado entre 25% y 60%
+            # Inflate declared income 25–60% to trigger the income discrepancy rule
             declared_income = round(base_income * random.uniform(1.25, 1.60), 2)
-            actual_income = base_income
-            credit_score = random.randint(480, 650)
+            actual_income   = base_income
+            credit_score    = random.randint(480, 650)
         else:
-            # Ingreso declarado consistente con el real (±10%)
+            # Compliant: declared income closely matches actual payroll (±10%)
             declared_income = round(base_income * random.uniform(0.92, 1.08), 2)
-            actual_income = base_income
-            credit_score = random.randint(620, 850)
+            actual_income   = base_income
+            credit_score    = random.randint(620, 850)
 
-        # Generar los 3 archivos
-        profile = generate_client_profile(i, declared_income)
-
-        pdf_path = os.path.join(dossier_dir, "credit_bureau.pdf")
+        # Generate the three source files for this dossier
+        profile   = generate_client_profile(i, declared_income)
+        pdf_path  = os.path.join(dossier_dir, "credit_bureau.pdf")
         json_path = os.path.join(dossier_dir, "client_profile.json")
-        csv_path = os.path.join(dossier_dir, "transactions.csv")
+        csv_path  = os.path.join(dossier_dir, "transactions.csv")
 
         generate_credit_bureau_pdf(i, profile, credit_score, pdf_path)
 
@@ -198,25 +280,27 @@ def main():
         compliant, findings = is_compliant(declared_income, actual_income, credit_score)
 
         summary.append({
-            "dossier_id": profile["dossier_id"],
-            "expected_status": "Compliant" if compliant else "Non-Compliant",
+            "dossier_id":              profile["dossier_id"],
+            "expected_status":         "Compliant" if compliant else "Non-Compliant",
             "expected_findings_count": len(findings),
-            "findings_detail": findings,
+            "findings_detail":         findings,
         })
 
-        print(f"[{'OK' if compliant else 'FLAG'}] Dossier {i:03d} — "
-              f"{'Compliant' if compliant else 'Non-Compliant'} "
-              f"({'0 findings' if not findings else str(len(findings)) + ' finding(s)'})")
+        print(
+            f"[{'OK  ' if compliant else 'FLAG'}] Dossier {i:03d} — "
+            f"{'Compliant' if compliant else 'Non-Compliant'} "
+            f"({'0 findings' if not findings else str(len(findings)) + ' finding(s)'})"
+        )
 
-    # Guardar ground truth para validación posterior
+    # Persist ground truth for post-run LLM accuracy validation
     with open(os.path.join(DATA_DIR, "ground_truth.json"), "w") as f:
         json.dump(summary, f, indent=2)
 
     total_nc = sum(1 for s in summary if s["expected_status"] == "Non-Compliant")
-    print(f"\n✓ 100 dossiers generados en /data")
+    print(f"\n✓ 100 dossiers generated in /data")
     print(f"  Compliant:     {100 - total_nc}")
     print(f"  Non-Compliant: {total_nc}")
-    print(f"  Ground truth guardado en data/ground_truth.json")
+    print(f"  Ground truth saved to data/ground_truth.json")
 
 
 if __name__ == "__main__":
