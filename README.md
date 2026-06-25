@@ -291,9 +291,77 @@ Dashboard metrics available:
 
 ## Deliverables Summary
 
-| # | Deliverable | Location |
-|---|---|---|
-| 1 | Pipeline Source Code (LCEL) | `src/chain.py`, `main.py` |
-| 2 | Infrastructure Log File | `output/langchain_demo.log` |
-| 3 | Structured Financial Audit Report | `output/audit_report.json` |
-| 4 | LangSmith Telemetry Dashboard | LangSmith project `FinTech_Compliance_Project` |
+### 1. Pipeline Source Code (LCEL)
+
+| File | Role |
+|---|---|
+| `src/chain.py` | LCEL pipeline — prompt template → ChatAnthropic → PydanticOutputParser |
+| `src/loaders.py` | Multi-format loaders: PDF (`pypdf`), JSON, CSV (`pandas`) |
+| `src/schema.py` | Pydantic `AuditResult` schema with field validators |
+| `src/logger.py` | Dual-output logger (console + file) |
+| `main.py` | Batch orchestrator — processes all 100 dossiers and writes the report |
+
+---
+
+### 2. Infrastructure Log File
+
+**Location:** `output/langchain_demo.log`
+
+Timestamped execution trail for every loader call and LLM invocation across all 100 dossiers. Generated automatically on each `python main.py` run.
+
+![Infrastructure Log File — langchain_demo.log](output/insights_dashboard/langchain_demo_log.png)
+
+---
+
+### 3. Structured Financial Audit Report
+
+**Location:** `output/audit_report.json`
+
+JSON report aggregating all 100 audit results with compliance verdict, findings count, executive summary, and processing time per dossier.
+
+```json
+{
+  "total_processed": 100,
+  "total_errors": 0,
+  "compliant": 55,
+  "non_compliant": 45,
+  "failed_dossiers": [],
+  "audit_results": [
+    {
+      "dossier_id": "DOS-001",
+      "compliance_status": "Non-Compliant",
+      "findings_count": 2,
+      "executive_summary": "...",
+      "processing_time_s": 2.1
+    }
+  ]
+}
+```
+
+---
+
+### 4. LangSmith Telemetry Dashboard
+
+**Project:** `FinTech_Compliance_Project` — verified with `LANGCHAIN_TRACING_V2=true`
+
+All dashboard captures are stored in `output/insights_dashboard/`.
+
+#### Trace Count & Trace Latency & Error Rate
+
+> 100 traces generated — one per dossier. P50 latency ~1.7s, P99 ~6s. Error rate: 0%.
+
+![Trace Count, Latency and Error Rate — Last 7 days](output/insights_dashboard/trace1.png)
+
+![Trace Count, Latency and Error Rate — Batch run day (Jun 24)](output/insights_dashboard/trace2.png)
+
+#### LLM Call Count & LLM Latency
+
+> 100 LLM calls — one `ChatAnthropic` invocation per dossier, all successful (0 errors).
+
+![LLM Call Count and LLM Latency](output/insights_dashboard/counts.png)
+
+#### Token Metrics & Cost
+
+> ~100K input tokens total across the batch. ~18K output tokens. Median cost per trace: ~$0.0017.
+
+![Cost and Token Metrics](output/insights_dashboard/cost_tokens.png)
